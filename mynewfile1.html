@@ -1,0 +1,3280 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="X-Csrf-Token" content="ce0ffdf854f99bb95c64318145b57bbf"/>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=0.01"/>
+
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery-1.8.3.js"></script>
+    <script type="application/javascript">
+        window.standaloneContest = false;
+        function adjustViewport() {
+            var screenWidthPx = Math.min($(window).width(), window.screen.width);
+            var siteWidthPx = 1100; // min width of site
+            var ratio = Math.min(screenWidthPx / siteWidthPx, 1.0);
+            var viewport = "width=device-width, initial-scale=" + ratio;
+            $('#viewport').attr('content', viewport);
+            var style = $('<style>html * { max-height: 1000000px; }</style>');
+            $('html > head').append(style);
+        }
+
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            adjustViewport();
+        }
+    </script>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="profileName" content="h3">
+    <meta name="google-site-verification" content="OTd2dN5x4nS4OPknPI9JFg36fKxjqY0i1PSfFPv_J90"/>
+    <meta property="fb:admins" content="100001352546622" />
+    <meta property="og:image" content="//sta.codeforces.com/s/84672/images/codeforces-telegram-square.png" />
+    <link rel="image_src" href="//sta.codeforces.com/s/84672/images/codeforces-telegram-square.png" />
+    <meta property="og:title" content="Codeforces"/>
+    <meta property="og:description" content=""/>
+    
+    <meta property="og:site_name" content="Codeforces"/>
+    
+    
+    
+    
+    
+    
+    <meta name="utc_offset" content="+03:00"/>
+    <meta name="verify-reformal" content="f56f99fd7e087fb6ccb48ef2" />
+    <title>Codeforces</title>
+        <meta name="description" content="Codeforces. Programming competitions and contests, programming community" />
+        <meta name="keywords" content="programming algorithm contest competition informatics olympiads c++ java graphs vkcup" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/font-awesome.min.css" type="text/css" charset="utf-8" />
+
+        <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Cuprum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="//sta.codeforces.com/s/84672/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="//sta.codeforces.com/s/84672/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="//sta.codeforces.com/s/84672/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="//sta.codeforces.com/s/84672/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="//sta.codeforces.com/s/84672/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//sta.codeforces.com/s/84672/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="//sta.codeforces.com/s/84672/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//sta.codeforces.com/s/84672/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="//sta.codeforces.com/s/84672/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="//sta.codeforces.com/s/84672/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="//sta.codeforces.com/s/84672/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="//sta.codeforces.com/s/84672/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="//sta.codeforces.com/s/84672/favicon-16x16.png">
+    <link rel="manifest" href="//sta.codeforces.com/s/84672/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="//sta.codeforces.com/s/84672/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--CombineResourcesFilter-->
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/prettify.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/clear.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/ttypography.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/problem-statement.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/second-level-menu.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/roundbox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/datatable.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/table-form.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/topic.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/jquery.jgrowl.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/facebox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/jquery.wysiwyg.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/jquery.autocomplete.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/codeforces.datepick.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/colorbox.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/jquery.drafts.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="//sta.codeforces.com/s/84672/css/community.css" type="text/css" charset="utf-8" />
+
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+    });
+    </script>
+    <script type="text/javascript" async
+            src="https://assets.codeforces.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full"
+    >
+    </script>
+    <!-- /MathJax -->
+
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/prettify/prettify.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/pushstream.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.lavalamp.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.jgrowl.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.swipe.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/facebox.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.wysiwyg.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/controls/wysiwyg.colorpicker.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/controls/wysiwyg.table.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/controls/wysiwyg.image.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/controls/wysiwyg.link.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/ua-parser.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.datepick.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.ie6blocker.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.ba-bbq.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/jquery.drafts.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/clipboard.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/autosize.min.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/sjcl.js"></script>
+    <script type="text/javascript" src="/scripts/d2e9d22f96bb342117855e8a92b5b99e/en/codeforces-options.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/codeforces.js?v=20160131"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/EventCatcher.js?v=20160131"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/js/preparedVerdictFormats-en.js"></script>
+    <!--/CombineResourcesFilter-->
+
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/markitup/skins/markitup/style.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="//sta.codeforces.com/s/84672/markitup/sets/markdown/style.css" type="text/css" charset="utf-8" />
+
+
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/markitup/jquery.markitup.js"></script>
+    <script type="text/javascript" src="//sta.codeforces.com/s/84672/markitup/sets/markdown/set.js"></script>
+
+    <!--[if IE]>
+    <style>
+        #sidebar {
+            padding-left: 1em;
+            margin: 1em 1em 1em 0;
+        }
+    </style>
+    <![endif]-->
+
+
+
+</head>
+<body class=" "><span style='display:none;' class='csrf-token' data-csrf='ce0ffdf854f99bb95c64318145b57bbf'>&nbsp;</span>
+<!-- .notificationTextCleaner used in Codeforces.showAnnouncements() -->
+<div class="notificationTextCleaner" style="font-size: 0px"></div>
+<div class="button-up" style="display: none; opacity: 0.7; width: 50px; height:100%; position: fixed; left: 0; top: 0; cursor: pointer; text-align: center; line-height: 35px; color: #d3dbe4; font-weight: bold; font-size: 3.0rem;"><i class="icon-circle-arrow-up"></i></div>
+<div class="verdictPrototypeDiv" style="display: none;"></div>
+
+<!-- Codeforces JavaScripts. -->
+<script type="text/javascript">
+    String.prototype.hashCode = function() {
+        var hash = 0, i, chr;
+        if (this.length === 0) return hash;
+        for (i = 0; i < this.length; i++) {
+            chr   = this.charCodeAt(i);
+            hash  = ((hash << 5) - hash) + chr;
+            hash |= 0; // Convert to 32bit integer
+        }
+        return hash;
+    };
+
+    var queryMobile = Codeforces.queryString.mobile;
+    if (queryMobile === "true" || queryMobile === "false") {
+        Codeforces.putToStorage("useMobile", queryMobile == "true");
+    } else {
+        var useMobile = Codeforces.getFromStorage("useMobile");
+        if (useMobile === true || useMobile === false) {
+            if (useMobile != false) {
+                Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", useMobile));
+            }
+        }
+    }
+</script>
+<script type="text/javascript">
+    if (window.parent.frames.length > 0) {
+        window.stop();
+    }
+</script>
+
+
+<script type="text/javascript">
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '554666954583323',
+            xfbml      : true,
+            version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    (function () {
+        jQuery.expr[':'].containsCI = function(elem, index, match) {
+            return !match || !match.length || match.length < 4 || !match[3] || (
+                    elem.textContent || elem.innerText || jQuery(elem).text() || ''
+            ).toLowerCase().indexOf(match[3].toLowerCase()) >= 0;
+        }
+    }(jQuery));
+
+    $.ajaxPrefilter(function(options, originalOptions, xhr) {
+        var csrf = Codeforces.getCsrfToken();
+
+        if (csrf) {
+            var data = originalOptions.data;
+            if (originalOptions.data !== undefined) {
+                if (Object.prototype.toString.call(originalOptions.data) === '[object String]') {
+                    data = $.deparam(originalOptions.data);
+                }
+            } else {
+                data = {};
+            }
+            options.data = $.param($.extend(data, { csrf_token: csrf }));
+        }
+    });
+
+    window.getCodeforcesServerTime = function(callback) {
+        $.post("/data/time", {}, callback, "json");
+    }
+
+    window.updateTypography = function () {
+        $("div.ttypography code").addClass("tt");
+        $("div.ttypography pre>code").addClass("prettyprint").removeClass("tt");
+        $("div.ttypography table").addClass("bordertable");
+        prettyPrint();
+    }
+
+    $.ajaxSetup({ scriptCharset: "utf-8" ,contentType: "application/x-www-form-urlencoded; charset=UTF-8", headers: {
+        'X-Csrf-Token': Codeforces.getCsrfToken()
+    }});
+
+    window.updateTypography();
+
+    Codeforces.signForms();
+
+    setTimeout(function() {
+        $(".second-level-menu-list").lavaLamp({
+            fx: "backout",
+            speed: 700
+        });
+    }, 100);
+
+
+    Codeforces.countdown();
+    $("a[rel='photobox']").colorbox();
+
+
+    function showAnnouncements(json) {
+        //info("j=" + JSON.stringify(json));
+
+        if (json.t != "a") {
+            return;
+        }
+        // console.log("Got announcement from channel");
+        setTimeout(function() {
+            Codeforces.showAnnouncements(json.d, "en");
+        }, Math.random() * 500);
+    }
+
+    function showEventCatcherUserMessage(json) {
+        if (json.t == "s") {
+            var points = json.d[5];
+            var passedTestCount = json.d[7];
+            var judgedTestCount = json.d[8];
+            var verdict = preparedVerdictFormats[json.d[12]];
+            var verdictPrototypeDiv = $(".verdictPrototypeDiv");
+            verdictPrototypeDiv.html(verdict);
+            if (judgedTestCount != null && judgedTestCount != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-judged").text(judgedTestCount);
+            }
+            if (passedTestCount != null && passedTestCount != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-passed").text(passedTestCount);
+            }
+            if (points != null && points != undefined) {
+                verdictPrototypeDiv.find(".verdict-format-points").text(points);
+            }
+            Codeforces.showMessage(verdictPrototypeDiv.text());
+        }
+    }
+
+    $(".clickable-title").each(function() {
+        var title = $(this).attr("data-title");
+        if (title) {
+            var tmp = document.createElement("DIV");
+            tmp.innerHTML = title;
+            $(this).attr("title", tmp.textContent || tmp.innerText || "");
+        }
+    });
+
+    $(".clickable-title").click(function() {
+        var title = $(this).attr("data-title");
+        if (title) {
+            Codeforces.alert(title);
+        } else {
+            Codeforces.alert($(this).attr("title"));
+        }
+    }).css("position", "relative").css("bottom", "3px");
+
+        Codeforces.showDelayedMessage();
+
+    Codeforces.reformatTimes();
+
+    //Codeforces.initializePubSub();
+    if (window.codeforcesOptions.subscribeServerUrl) {
+        window.eventCatcher = new EventCatcher(
+            window.codeforcesOptions.subscribeServerUrl,
+            [
+                Codeforces.getGlobalChannel(),
+                Codeforces.getUserChannel(),
+                Codeforces.getUserShowMessageChannel(),
+                Codeforces.getContestChannel(),
+                Codeforces.getParticipantChannel(),
+                Codeforces.getTalkChannel()
+            ]
+        );
+
+        if (Codeforces.getParticipantChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getParticipantChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getContestChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getContestChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getGlobalChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getGlobalChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getUserChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getUserChannel(), function(json) {
+                showAnnouncements(json);
+            });
+        }
+
+        if (Codeforces.getUserShowMessageChannel()) {
+            window.eventCatcher.subscribe(Codeforces.getUserShowMessageChannel(), function(json) {
+                showEventCatcherUserMessage(json);
+            });
+        }
+    }
+
+    Codeforces.setupContestTimes("/data/contests");
+    Codeforces.setupSpoilers();
+    Codeforces.setupTutorials("/data/problemTutorial");
+        });
+    </script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-743380-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = (document.location.protocol == 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<div id="body">
+        
+
+<div class="side-bell" style="visibility: hidden; display: none; opacity: 0.7; width: 40px; position: fixed; right: 0; top: 0; cursor: pointer; text-align: center; line-height: 35px; color: #d3dbe4; font-weight: bold; font-size: 1.5rem;">
+    <span class="icon-stack" style="width: 100%;">
+        <i class="icon-circle icon-stack-base"></i>
+        <i class="icon-bell-alt icon-light"></i>
+    </span>
+    <br/>
+    <span class="side-bell__count" style="position: relative; top: -10px;"></span>
+</div>
+
+
+<div id="header" style="position: relative;">
+    <div style="float:left;">
+            <a href="/"><img style="height: 50px; margin-top: 10px;" title="Make Codeforces, not Coronaforces" alt="Make Codeforces not Coronaforces" src="//sta.codeforces.com/s/84672/images/codeforces-vs-coronavirus-65.png"/></a>
+    </div>
+    <div class="lang-chooser">
+        <div style="text-align: right;">
+            <a href="?locale=en"><img src="//sta.codeforces.com/s/84672/images/flags/24/gb.png" title="In English" alt="In English"/></a>
+            <a href="?locale=ru"><img src="//sta.codeforces.com/s/84672/images/flags/24/ru.png" title="По-русски" alt="По-русски"/></a>
+        </div>
+
+        <div >
+                        <a href="/enter?back=%2F">Enter</a>
+                     | 
+                        <a href="/register">Register</a>
+                    
+        </div>
+
+
+
+    </div>
+    <br style="clear: both;"/>
+</div>
+        
+
+    <div class="roundbox menu-box" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+    <div class="menu-list-container">
+    <ul class="menu-list main-menu-list">
+                <li class="current"><a href="/">Home</a></li>
+                <li class=""><a href="/top">Top</a></li>
+                <li class=""><a href="/contests">Contests</a></li>
+                <li class=""><a href="/gyms">Gym</a></li>
+                <li class=""><a href="/problemset">Problemset</a></li>
+                <li class=""><a href="/groups">Groups</a></li>
+                <li class=""><a href="/ratings">Rating</a></li>
+                <li class=""><a href="/apiHelp">API</a></li>
+                <li class=""><a href="/calendar">Calendar</a></li>
+                <li class=""><a href="/help">Help</a></li>
+                <li class=""><a href="/10years"><span style="color:#ce2a2a;font-weight:bold;">10 years! <i style="font-size:100%" class="icon-gift"></i></span></a></li>
+    </ul>
+        <form method="post" action="/search"><input type='hidden' name='csrf_token' value='ce0ffdf854f99bb95c64318145b57bbf'/>
+            <input class="search" name="query" data-isPlaceholder="true" value=""/>
+        </form>
+    <br style="clear: both;"/>
+</div>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input.search").focus(function () {
+                if ($(this).attr("data-isPlaceholder") === "true") {
+                    $(this).val("");
+                    $(this).removeAttr("data-isPlaceholder");
+                }
+            });
+        });
+    </script>
+    <div style="margin:1em;text-align: center; position: relative;" class="alert alert-warning" data-infoBarId="33">
+        <i class="icon-star"></i> Rating changes for the last round are temporarily rolled back. They will be returned soon.
+        <span class="infobar-close" style="position: absolute; top: 0.2em; right: 0.3em; cursor: pointer; font-size: 1.4em;">&times;</span>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $(".infobar-close").click(function () {
+        $(this).parent().fadeOut();
+        $.post("/data/infobars", {action: "hide", infoBarId: $(this).parent().attr("data-infoBarId")}, function (response) {
+            // No operations.
+        }, "json");
+    });
+        });
+    </script>
+            <br style="height: 3em; clear: both;"/>
+
+        <div style="position: relative;">
+                        <div id="sidebar">
+    <div class="roundbox sidebox" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled">&rarr; Pay attention
+            <div class="top-links">
+            </div>
+        </div>
+<div style="padding: 0.5em;">
+        <div style="text-align:center;border-bottom: 1px solid rgb(185, 185, 185);margin:0 -0.5em 0.5em -0.5em;padding: 0 1em 0.5em 1em;">
+            <span class='contest-state-phase'>Before contest</span><br/><a href="/contests/1331">April Fools Day Contest 2020</a><br/><span class='countdown' home='//sta.codeforces.com/s/84672' noRedirection='true' textBeforeRedirect=''>15:37:53</span><br/><a href="/contestRegistration/1331">Register now »</a>
+        </div>
+        <div style="text-align:center;">
+            <div class="socials" style="text-align: left;">
+                <div style="margin-top: 0.85em;position: relative;">
+
+        <div id="fb-root"></div>
+        <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_EN/all.js#appId=554666954583323&xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div class="fb-like" data-href="//codeforces.com/contests/1331" data-send="false" data-width="256" data-show-faces="false" data-font="arial" data-ref='1510400'></div>
+
+        </div>
+</div>
+
+        </div>
+</div>
+    </div>
+<div class="roundbox sidebox top-contributed" style="">
+<div class="roundbox-lt">&nbsp;</div>
+<div class="roundbox-rt">&nbsp;</div>
+<div class="caption titled">&rarr; Top rated
+<div class="top-links">
+</div>
+</div>
+<table class="rtable ">
+<tbody>
+<tr>
+<th class="left" style="width:2.25em;">#</th>
+<th class="">User</th>
+<th class="" style="width:5em;">Rating</th>
+</tr>
+<tr>
+<td class="left dark">1</td>
+<td class=" dark"><a href="/profile/MiFaFaOvO" title="Legendary grandmaster MiFaFaOvO" class="rated-user user-legendary"><span class="legendary-user-first-letter">M</span>iFaFaOvO</a></td>
+<td class=" dark">3681</td>
+</tr>
+<tr>
+<td class="left ">2</td>
+<td class=""><a href="/profile/tourist" title="Legendary grandmaster tourist" class="rated-user user-legendary"><span class="legendary-user-first-letter">t</span>ourist</a></td>
+<td class="">3669</td>
+</tr>
+<tr>
+<td class="left dark">3</td>
+<td class=" dark"><a href="/profile/apiadu" title="Legendary grandmaster apiadu" class="rated-user user-legendary"><span class="legendary-user-first-letter">a</span>piadu</a></td>
+<td class=" dark">3397</td>
+</tr>
+<tr>
+<td class="left ">4</td>
+<td class=""><a href="/profile/TLE" title="Legendary grandmaster TLE" class="rated-user user-legendary"><span class="legendary-user-first-letter">T</span>LE</a></td>
+<td class="">3374</td>
+</tr>
+<tr>
+<td class="left dark">5</td>
+<td class=" dark"><a href="/profile/Um_nik" title="Legendary grandmaster Um_nik" class="rated-user user-legendary"><span class="legendary-user-first-letter">U</span>m_nik</a></td>
+<td class=" dark">3358</td>
+</tr>
+<tr>
+<td class="left ">6</td>
+<td class=""><a href="/profile/300iq" title="Legendary grandmaster 300iq" class="rated-user user-legendary"><span class="legendary-user-first-letter">3</span>00iq</a></td>
+<td class="">3317</td>
+</tr>
+<tr>
+<td class="left dark">7</td>
+<td class=" dark"><a href="/profile/maroonrk" title="Legendary grandmaster maroonrk" class="rated-user user-legendary"><span class="legendary-user-first-letter">m</span>aroonrk</a></td>
+<td class=" dark">3232</td>
+</tr>
+<tr>
+<td class="left ">8</td>
+<td class=""><a href="/profile/Benq" title="Legendary grandmaster Benq" class="rated-user user-legendary"><span class="legendary-user-first-letter">B</span>enq</a></td>
+<td class="">3230</td>
+</tr>
+<tr>
+<td class="left dark">9</td>
+<td class=" dark"><a href="/profile/LHiC" title="Legendary grandmaster LHiC" class="rated-user user-legendary"><span class="legendary-user-first-letter">L</span>HiC</a></td>
+<td class=" dark">3229</td>
+</tr>
+<tr>
+<td class="left bottom">10</td>
+<td class="bottom"><a href="/profile/1919810" title="Legendary grandmaster 1919810" class="rated-user user-legendary"><span class="legendary-user-first-letter">1</span>919810</a></td>
+<td class="bottom">3203</td>
+</tr>
+</tbody>
+</table>
+<div class="bottom-links">
+<table style="width:100%;">
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="/ratings/countries">Countries</a> |
+<a href="/ratings/cities">Cities</a> |
+<a href="/ratings/organizations">Organizations</a>
+</td>
+<td style="text-align:right;">
+<a href="/ratings">View all &rarr;</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="roundbox sidebox top-contributed" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled">&rarr; Top contributors
+            <div class="top-links">
+            </div>
+        </div>
+        <table class="rtable ">
+            <tbody>
+                <tr>
+                            <th class="left" style="width:2.25em;">#</th>
+                            <th class="">User</th>
+                            <th class="" style="width:5em;">Contrib.</th>
+                </tr>
+                    <tr>
+                                <td class="left  dark">1</td>
+                                <td class=" dark"><a href="/profile/antontrygubO_o" title="Grandmaster antontrygubO_o" class="rated-user user-red">antontrygubO_o</a></td>
+                                <td class=" dark">191</td>
+                    </tr>
+                    <tr>
+                                <td class="left ">2</td>
+                                <td class=""><a href="/profile/Errichto" title="International Grandmaster Errichto" class="rated-user user-red">Errichto</a></td>
+                                <td class="">185</td>
+                    </tr>
+                    <tr>
+                                <td class="left  dark">3</td>
+                                <td class=" dark"><a href="/profile/tourist" title="Legendary grandmaster tourist" class="rated-user user-legendary"><span class="legendary-user-first-letter">t</span>ourist</a></td>
+                                <td class=" dark">182</td>
+                    </tr>
+                    <tr>
+                                <td class="left ">4</td>
+                                <td class=""><a href="/profile/vovuh" title="Master vovuh" class="rated-user user-orange">vovuh</a></td>
+                                <td class="">170</td>
+                    </tr>
+                    <tr>
+                                <td class="left  dark">5</td>
+                                <td class=" dark"><a href="/profile/pikmike" title="Master pikmike" class="rated-user user-orange">pikmike</a></td>
+                                <td class=" dark">169</td>
+                    </tr>
+                    <tr>
+                                <td class="left ">6</td>
+                                <td class=""><a href="/profile/ko_osaga" title="International Grandmaster ko_osaga" class="rated-user user-red">ko_osaga</a></td>
+                                <td class="">164</td>
+                    </tr>
+                    <tr>
+                                <td class="left  dark">6</td>
+                                <td class=" dark"><a href="/profile/Radewoosh" title="Legendary grandmaster Radewoosh" class="rated-user user-legendary"><span class="legendary-user-first-letter">R</span>adewoosh</a></td>
+                                <td class=" dark">164</td>
+                    </tr>
+                    <tr>
+                                <td class="left ">8</td>
+                                <td class=""><a href="/profile/Um_nik" title="Legendary grandmaster Um_nik" class="rated-user user-legendary"><span class="legendary-user-first-letter">U</span>m_nik</a></td>
+                                <td class="">163</td>
+                    </tr>
+                    <tr>
+                                <td class="left  dark">9</td>
+                                <td class=" dark"><a href="/profile/300iq" title="Legendary grandmaster 300iq" class="rated-user user-legendary"><span class="legendary-user-first-letter">3</span>00iq</a></td>
+                                <td class=" dark">156</td>
+                    </tr>
+                    <tr>
+                                <td class="left bottom">10</td>
+                                <td class="bottom"><a href="/profile/rng_58" title="Legendary grandmaster rng_58" class="rated-user user-legendary"><span class="legendary-user-first-letter">r</span>ng_58</a></td>
+                                <td class="bottom">154</td>
+                    </tr>
+            </tbody>
+        </table>
+            <div class="bottom-links">
+                <table style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <td style="text-align:left;">
+                            </td>
+                            <td style="text-align:right;">
+                                    <a href="/top-contributed">View all &rarr;</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+        });
+    </script>
+
+    <div class="roundbox sidebox" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled">&rarr; Find user
+            <div class="top-links">
+            </div>
+        </div>
+        <form class="handleForm" method="post"><input type='hidden' name='csrf_token' value='ce0ffdf854f99bb95c64318145b57bbf'/>
+            <div style="padding:1em;text-align:right;">
+                <label style="padding-right:1em;">Handle:
+                    <input style="width:12em;" type="text" class="handleBox"/>
+                </label>
+            </div>
+            <div style="padding: 0 1em 1em 1em;text-align:right;">
+                <input style="height:1.65em;padding:0 0.75em;" type="submit" value="Find"/>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $(".handleBox").autocomplete("/data/handles", {
+        delay: 200,
+        width: 200,
+        selectFirst: false,
+        matchContains: true,
+        minChars: 3
+    });
+    $(".handleForm").attr("autocomplete", "off").submit(function () {
+        var link = "/profile/userHandle".replace(
+            "userHandle", $(this).find(".handleBox").val()
+        );
+        window.location = link;
+        return false;
+    });
+        });
+    </script>
+
+
+<div class="roundbox sidebox" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+        <div class="caption titled">&rarr; Recent actions
+            <div class="top-links">
+            </div>
+        </div>
+        <div class="recent-actions">
+            <ul>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/Hamim99" title="Specialist Hamim99" class="rated-user user-cyan">Hamim99</a>        &rarr;
+        <a href="/blog/entry/75427">Need help</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/vovuh" title="Master vovuh" class="rated-user user-orange">vovuh</a>        &rarr;
+        <a href="/blog/entry/71184">Codeforces Round #598 (Div. 3) Editorial</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/Nickolas" title="Expert Nickolas" class="rated-user user-blue">Nickolas</a>        &rarr;
+        <a href="/blog/entry/75327">April Fools Day Contest 2020</a>
+&nbsp;&nbsp;<img alt="Text created or updated" title="Text created or updated" src="//sta.codeforces.com/s/84672/images/icons/x-update-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/triple__a" title="Master triple__a" class="rated-user user-orange">triple__a</a>        &rarr;
+        <a href="/blog/entry/75432">Codeforces Round #630 Editorial</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/Dgeka24" title="Expert Dgeka24" class="rated-user user-blue">Dgeka24</a>        &rarr;
+        <a href="/blog/entry/75446">HELP PLS Troubles with iterators C++</a>
+&nbsp;&nbsp;<img alt="Text created or updated" title="Text created or updated" src="//sta.codeforces.com/s/84672/images/icons/x-update-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/sslotin" title="Master sslotin" class="rated-user user-orange">sslotin</a>        &rarr;
+        <a href="/blog/entry/75421">4-5x Faster Drop-in Replacement for std::lower_bound</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/nqs_1" title="Expert nqs_1" class="rated-user user-blue">nqs_1</a>        &rarr;
+        <a href="/blog/entry/75444">Can we solve this problem without binary search?</a>
+&nbsp;&nbsp;<img alt="Text created or updated" title="Text created or updated" src="//sta.codeforces.com/s/84672/images/icons/x-update-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/Virtual_" title="Unrated, Virtual_" class="rated-user user-black">Virtual_</a>        &rarr;
+        <a href="/blog/entry/75443">Virtual contests practice </a>
+&nbsp;&nbsp;<img alt="Text created or updated" title="Text created or updated" src="//sta.codeforces.com/s/84672/images/icons/x-update-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/Anadi" title="International Grandmaster Anadi" class="rated-user user-red">Anadi</a>        &rarr;
+        <a href="/blog/entry/75266">XX Open Cup: GP of Wrocław</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/ReZa.BN" title="Pupil ReZa.BN" class="rated-user user-green">ReZa.BN</a>        &rarr;
+        <a href="/blog/entry/75430">Minimum possible value</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/once_twice" title="Pupil once_twice" class="rated-user user-green">once_twice</a>        &rarr;
+        <a href="/blog/entry/69409">Solution to import error of Pbds in windows</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/triple__a" title="Master triple__a" class="rated-user user-orange">triple__a</a>        &rarr;
+        <a href="/blog/entry/75325">Codeforces Round #630 (Div. 2)</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/ko_osaga" title="International Grandmaster ko_osaga" class="rated-user user-red">ko_osaga</a>        &rarr;
+        <a href="/blog/entry/75431">Story about edge coloring of graph</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/mujtabax" title="Specialist mujtabax" class="rated-user user-cyan">mujtabax</a>        &rarr;
+        <a href="/blog/entry/75442">Song which mentions Meet in the middle algorithm. (Do Listen !!)</a>
+&nbsp;&nbsp;<img alt="Text created or updated" title="Text created or updated" src="//sta.codeforces.com/s/84672/images/icons/x-update-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/beethoven97" title="Specialist beethoven97" class="rated-user user-cyan">beethoven97</a>        &rarr;
+        <a href="/blog/entry/75441">wrong output format Unexpected end of file - double expected</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/bharat.khanna.cse14" title="Candidate Master bharat.khanna.cse14" class="rated-user user-violet">bharat.khanna.cse14</a>        &rarr;
+        <a href="/blog/entry/54750">Editorial — Manthan Codefest &#39;17</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/TLE" title="Legendary grandmaster TLE" class="rated-user user-legendary"><span class="legendary-user-first-letter">T</span>LE</a>        &rarr;
+        <a href="/blog/entry/61306">Linear Recurrence and Berlekamp-Massey Algorithm</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/xiaowuc1" title="Master xiaowuc1" class="rated-user user-orange">xiaowuc1</a>        &rarr;
+        <a href="/blog/entry/75154">USACO 2019-2020 US Open</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/dalex" title="Master dalex" class="rated-user user-orange">dalex</a>        &rarr;
+        <a href="/blog/entry/75440">Gym — XIII Samara Regional Intercollegiate Programming Contest</a>
+&nbsp;&nbsp;<img alt="Text created or updated" title="Text created or updated" src="//sta.codeforces.com/s/84672/images/icons/x-update-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/chokudai" title="Grandmaster chokudai" class="rated-user user-red">chokudai</a>        &rarr;
+        <a href="/blog/entry/75262">AtCoder Beginner Contest 160 Announcement</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/StrawberryInsha2k" title="Pupil StrawberryInsha2k" class="rated-user user-green">StrawberryInsha2k</a>        &rarr;
+        <a href="/blog/entry/75429">Coin Toss in Dynamic Programming </a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/Chilli" title="Candidate Master Chilli" class="rated-user user-violet">Chilli</a>        &rarr;
+        <a href="/blog/entry/74648">What will happen to ICPC World Finals due to Coronavirus?</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/d-agrawal" title="Unrated, d-agrawal" class="rated-user user-black">d-agrawal</a>        &rarr;
+        <a href="/blog/entry/75436">Rust and Python3 support for Competitive Programming Helper!</a>
+&nbsp;&nbsp;<img alt="Text created or updated" title="Text created or updated" src="//sta.codeforces.com/s/84672/images/icons/x-update-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/kostka" title="International Grandmaster kostka" class="rated-user user-red">kostka</a>        &rarr;
+        <a href="/blog/entry/75437">WF rescheduled to some unknown future dates</a>
+&nbsp;&nbsp;<img alt="Text created or updated" title="Text created or updated" src="//sta.codeforces.com/s/84672/images/icons/x-update-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+                        <li><div style="font-size:0.9em;padding:0.5em 0;">
+<a href="/profile/pikmike" title="Master pikmike" class="rated-user user-orange">pikmike</a>        &rarr;
+        <a href="/blog/entry/75147">Educational Codeforces Round 84 Editorial</a>
+&nbsp;&nbsp;<img alt="New comment(s)" title="New comment(s)" src="//sta.codeforces.com/s/84672/images/icons/comment-12x12.png" style="vertical-align:middle;"/>
+</div>
+</li>
+            </ul>
+        </div>
+            <div class="bottom-links">
+                <table style="width:100%;">
+                    <tbody>
+                        <tr>
+                            <td style="text-align:left;">
+                            </td>
+                            <td style="text-align:right;">
+                                    <a href="/recent-actions">Detailed &rarr;</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div></div>
+                        <div id="pageContent" class="content-with-sidebar">
+<div style="margin-bottom:2em;">
+
+
+<div class="topic" topicId="75858">
+    <div class="title">
+            <a href="/blog/entry/75327">            <p>April Fools Day Contest 2020</p>
+</a>
+    </div>
+
+    <div class="info" style="position:relative;">
+            By&nbsp;<a href="/profile/Nickolas" title="Expert Nickolas" class="rated-user user-blue">Nickolas</a>,
+                <span class="format-humantime" title="Mar/29/2020 09:58">3 days ago</span>,
+            translation,
+            <img style="position: relative;top: 5px;" src="//sta.codeforces.com/s/84672/images/flags/24/gb.png" alt="In English" title="In English"/>,
+
+<a class="attach-blogEntry-75327-to-contest-link" href="#"><img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" title="Attach this blog to some contest as a resource"/></a>
+
+<style type="text/css">
+    .attach-blogEntry-75327-to-contest-form tr:not(:last-of-type) td {
+        padding-bottom: 1em;
+    }
+
+    .blogEntry-75327-error {
+        font-size: 1.1rem;
+    }
+</style>
+
+<div class="attach-blogEntry-75327-to-contest-form-holder" style="display: none;padding: 1em;margin: 1em;">
+    <form class="attach-blogEntry-75327-to-contest-form" method="post"><input type='hidden' name='csrf_token' value='ce0ffdf854f99bb95c64318145b57bbf'/>
+        <table style="width: 100%;">
+            <thead>
+            </thead>
+            <tbody>
+        <tr class="subscription-row blogEntry-75327-blogId-error blogEntry-75327-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75327-blogId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-75327-contestId">Contest:</label></td>
+                <td>
+                    <input type="text" style="width: 100%;float: left;" id="blogEntry-75327-contestId" name="contestIdAndName"/>
+                </td>
+                <td>
+                </td>
+            </tr>
+        <tr class="subscription-row blogEntry-75327-contestId-error blogEntry-75327-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75327-contestId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-75327-resourceType">Type:</label></td>
+                <td>
+                    <select id="blogEntry-75327-resourceType" name="resourceType" style="width: 100%;">
+                        <option value="" selected></option>
+                        <option value="STATEMENT">statements</option>
+                        <option value="TUTORIAL">tutorial</option>
+                        <option value="ANNOUNCEMENT">announcement</option>
+                        <option value="DISCUSSION">discussion</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+        <tr class="subscription-row blogEntry-75327-resourceType-error blogEntry-75327-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75327-resourceType">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" id="blogEntry-75327-resource-submit" value="Attach"
+                           style="padding: 0.25em 0.5em;margin: 1em;width: 8em;"/>
+                </td>
+                <td>
+                    <img id="blogEntry-75327-resource-submitting-indicator" src="//sta.codeforces.com/s/84672/images/indicator.gif"
+                         style="display: none;"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".blogEntry-75327-error").hide();
+
+        $(".attach-blogEntry-75327-to-contest-link").click(function () {
+            Codeforces.facebox(".attach-blogEntry-75327-to-contest-form-holder", "//sta.codeforces.com/s/84672");
+
+            var popupContestInput = $("#facebox input[name=contestIdAndName]");
+            popupContestInput.autocomplete("/data/contests?action=suggestContestWithEditableResources", {
+                delay: 200,
+                width: 500,
+                selectFirst: false,
+                matchContains: true,
+                scroll: true,
+                max: 150,
+                minChars: 2
+            });
+
+            $("#facebox .attach-blogEntry-75327-to-contest-form").submit(function () {
+                var contestId = popupContestInput.attr("value").trim().split(/[\- ]/)[0];
+                if (contestId !== undefined) {
+                    $("#facebox .blogEntry-75327-error").hide();
+                    $("#facebox #blogEntry-75327-resource-submitting-indicator").show();
+                    $("#facebox #blogEntry-75327-resource-submit").attr("disabled", "disabled");
+
+                    //noinspection JSUnusedGlobalSymbols
+                    $.post("/data/blogAndContest?action=attachBlogToContest", {
+                        blogId:"5202", contestId:contestId,
+                        blogEntryId:"75327",
+                        resourceType:$("#facebox #blogEntry-75327-resourceType").val()
+                    }, function (json) {
+                        var validated = true;
+
+                        for (var key in json) {
+                            if (json.hasOwnProperty(key) && key.indexOf("error__") === 0) {
+                                validated = false;
+                                $("#facebox .blogEntry-75327-" + key.substring("error__".length) + "-error").show();
+                                $("#facebox .for__blogEntry-75327-" + key.substring("error__".length)).text(json[key]);
+                            }
+                        }
+
+                        $("#facebox #blogEntry-75327-resource-submitting-indicator").hide();
+                        $("#facebox #blogEntry-75327-resource-submit").removeAttr("disabled");
+
+                        if (validated) {
+                            $.facebox.close();
+                            if (json["success"] === "true") {
+                                Codeforces.showMessage("Blog has been successfully attached to selected contest");
+                            } else {
+                                Codeforces.showMessage("There is unexpected error while attaching blog to the contest");
+                            }
+                        }
+                    }, "json");
+                }
+
+                return false;
+            });
+
+
+            return false;
+        });
+    });
+</script>
+
+
+
+        <span style="position:absolute;right:0;top:0.05em;margin-right:1em;display:inline;font-size:0.75em;">
+            <div style="margin-top:0.25em;">
+            </div>
+        </span>
+    </div>
+
+    <div class="content">
+        <div class="ttypography"><p>The 8th April Fools Day Contest will take place on Wednesday <a href="https://www.timeanddate.com/worldclock/fixedtime.html?day=1&amp;month=4&amp;year=2020&amp;hour=17&amp;min=35&amp;sec=0&amp;p1=166">April 1st</a>. This is a joke competition in which solving the problem is often easier than figuring out what the actual task is.</p><p>In this round you'll be given several weird problems and 2 hours to solve them. The contest will use ACM ICPC rules (no hacks, the standings are decided by the number of solved problems and penalty time earned on them), and it will be unrated. You can submit solutions in any language allowed by Codeforces, unless the problem says otherwise. To get an idea of what the contest will look like, you can check out the contests of the past years: <a href="//codeforces.com/contest/171">2012</a>, <a href="//codeforces.com/contest/290">2013</a>, <a href="//codeforces.com/contest/409">2014</a>, <a href="//codeforces.com/contest/656">2016</a>, <a href="//codeforces.com/contest/784">2017</a>, <a href="//codeforces.com/contest/952">2018</a>, <a href="https://codeforces.com/contest/1145">2019</a>.</p><p>As usual, to enjoy competing in this round you'll need a sense of humor compatible with mine. Good luck, and have fun!</p></div><p><a href="/blog/entry/75327">Read more »</a></p>
+    </div>
+
+    <div style="font-size: 1.1rem;line-height: 1.1rem;padding-bottom: 0.5em;">
+    <img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" style="vertical-align: middle;"/> <span style="padding: 0 0.35em;">Announcement of <a href="/contest/1331" class="notice" style="text-decoration: none;">April Fools Day Contest 2020</a></span>
+    </div>
+
+        <div style="font-size: 1.1rem;line-height: 11px;">
+            <img style="vertical-align: middle;" src="//sta.codeforces.com/s/84672/images/blog/tags.png" title="Tags" alt="Tags"/>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=april+1st" class="tag notice" style="text-decoration: none;">april 1st</a>,
+                </span>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=april+fools+day+contest" class="tag notice" style="text-decoration: none;">april fools day contest</a>
+                </span>
+        </div>
+
+    <div class="roundbox meta" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+        <div class="left-meta">
+            <ul>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-up-75858"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/voteup.png"
+            alt="Vote: I like it" title="Vote: I like it"
+        /></a>
+
+
+</li>
+                    <li style="line-height: 1.6em;">
+
+        
+        <span title="Topic rating" style='font-size:larger;position:relative;bottom:1px;font-weight:bold;color:green'>+632</span>
+        
+</li>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-down-75858"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/votedown.png"
+            alt="Vote: I do not like it" title="Vote: I do not like it"
+        /></a>
+
+
+</li>
+            </ul>
+        </div>
+
+
+        <span style="position: relative; line-height: 1.65em; top: 0.75rem; left: 0.8em;">
+        </span>
+
+        <div class="right-meta">
+            <ul>
+                    <li>        <a href="/profile/Nickolas"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/user_16x16.png"
+            alt="Author" title="Author"
+        /></a>
+
+
+        <a href="/profile/Nickolas">
+        Nickolas
+        </a>
+</li>
+                    <li>        <img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/date_16x16.png"
+            alt="Publication date" title="Publication date"
+        />
+
+
+        
+        <span class="format-humantime" title="Mar/29/2020 09:58">3 days ago</span>
+        
+</li>
+                    <li>        <a href="/blog/entry/75327#comments"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/comments_16x16.png"
+            alt="Comments" title="Comments"
+        /></a>
+
+
+        <a href="/blog/entry/75327#comments">
+        70
+        </a>
+</li>
+            </ul>
+        </div>
+
+        <br style="clear:both;"/>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $(".topic-vote-up-75858").click(function () {
+        $.post("/data/topic/vote", {topicId: 75858, _tta: Codeforces.tta(), topicRevisionId: 182587, vote: +1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+    $(".topic-vote-down-75858").click(function () {
+        $.post("/data/topic/vote", {topicId: 75858, _tta: Codeforces.tta(), topicRevisionId: 182587, vote: -1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+        });
+    </script>
+</div>
+</div>
+<div style="margin-bottom:2em;">
+
+
+<div class="topic" topicId="75856">
+    <div class="title">
+            <a href="/blog/entry/75325">            <p>Codeforces Round #630 (Div. 2)</p>
+</a>
+    </div>
+
+    <div class="info" style="position:relative;">
+            By&nbsp;<a href="/profile/triple__a" title="Master triple__a" class="rated-user user-orange">triple__a</a>,
+                <a href="/topic/75856/en20">history</a>,
+                <span class="format-humantime" title="Mar/29/2020 08:50">3 days ago</span>,
+            
+            <img style="position: relative;top: 5px;" src="//sta.codeforces.com/s/84672/images/flags/24/gb.png" alt="In English" title="In English"/>,
+
+<a class="attach-blogEntry-75325-to-contest-link" href="#"><img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" title="Attach this blog to some contest as a resource"/></a>
+
+<style type="text/css">
+    .attach-blogEntry-75325-to-contest-form tr:not(:last-of-type) td {
+        padding-bottom: 1em;
+    }
+
+    .blogEntry-75325-error {
+        font-size: 1.1rem;
+    }
+</style>
+
+<div class="attach-blogEntry-75325-to-contest-form-holder" style="display: none;padding: 1em;margin: 1em;">
+    <form class="attach-blogEntry-75325-to-contest-form" method="post"><input type='hidden' name='csrf_token' value='ce0ffdf854f99bb95c64318145b57bbf'/>
+        <table style="width: 100%;">
+            <thead>
+            </thead>
+            <tbody>
+        <tr class="subscription-row blogEntry-75325-blogId-error blogEntry-75325-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75325-blogId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-75325-contestId">Contest:</label></td>
+                <td>
+                    <input type="text" style="width: 100%;float: left;" id="blogEntry-75325-contestId" name="contestIdAndName"/>
+                </td>
+                <td>
+                </td>
+            </tr>
+        <tr class="subscription-row blogEntry-75325-contestId-error blogEntry-75325-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75325-contestId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-75325-resourceType">Type:</label></td>
+                <td>
+                    <select id="blogEntry-75325-resourceType" name="resourceType" style="width: 100%;">
+                        <option value="" selected></option>
+                        <option value="STATEMENT">statements</option>
+                        <option value="TUTORIAL">tutorial</option>
+                        <option value="ANNOUNCEMENT">announcement</option>
+                        <option value="DISCUSSION">discussion</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+        <tr class="subscription-row blogEntry-75325-resourceType-error blogEntry-75325-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75325-resourceType">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" id="blogEntry-75325-resource-submit" value="Attach"
+                           style="padding: 0.25em 0.5em;margin: 1em;width: 8em;"/>
+                </td>
+                <td>
+                    <img id="blogEntry-75325-resource-submitting-indicator" src="//sta.codeforces.com/s/84672/images/indicator.gif"
+                         style="display: none;"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".blogEntry-75325-error").hide();
+
+        $(".attach-blogEntry-75325-to-contest-link").click(function () {
+            Codeforces.facebox(".attach-blogEntry-75325-to-contest-form-holder", "//sta.codeforces.com/s/84672");
+
+            var popupContestInput = $("#facebox input[name=contestIdAndName]");
+            popupContestInput.autocomplete("/data/contests?action=suggestContestWithEditableResources", {
+                delay: 200,
+                width: 500,
+                selectFirst: false,
+                matchContains: true,
+                scroll: true,
+                max: 150,
+                minChars: 2
+            });
+
+            $("#facebox .attach-blogEntry-75325-to-contest-form").submit(function () {
+                var contestId = popupContestInput.attr("value").trim().split(/[\- ]/)[0];
+                if (contestId !== undefined) {
+                    $("#facebox .blogEntry-75325-error").hide();
+                    $("#facebox #blogEntry-75325-resource-submitting-indicator").show();
+                    $("#facebox #blogEntry-75325-resource-submit").attr("disabled", "disabled");
+
+                    //noinspection JSUnusedGlobalSymbols
+                    $.post("/data/blogAndContest?action=attachBlogToContest", {
+                        blogId:"135526", contestId:contestId,
+                        blogEntryId:"75325",
+                        resourceType:$("#facebox #blogEntry-75325-resourceType").val()
+                    }, function (json) {
+                        var validated = true;
+
+                        for (var key in json) {
+                            if (json.hasOwnProperty(key) && key.indexOf("error__") === 0) {
+                                validated = false;
+                                $("#facebox .blogEntry-75325-" + key.substring("error__".length) + "-error").show();
+                                $("#facebox .for__blogEntry-75325-" + key.substring("error__".length)).text(json[key]);
+                            }
+                        }
+
+                        $("#facebox #blogEntry-75325-resource-submitting-indicator").hide();
+                        $("#facebox #blogEntry-75325-resource-submit").removeAttr("disabled");
+
+                        if (validated) {
+                            $.facebox.close();
+                            if (json["success"] === "true") {
+                                Codeforces.showMessage("Blog has been successfully attached to selected contest");
+                            } else {
+                                Codeforces.showMessage("There is unexpected error while attaching blog to the contest");
+                            }
+                        }
+                    }, "json");
+                }
+
+                return false;
+            });
+
+
+            return false;
+        });
+    });
+</script>
+
+
+
+        <span style="position:absolute;right:0;top:0.05em;margin-right:1em;display:inline;font-size:0.75em;">
+            <div style="margin-top:0.25em;">
+            </div>
+        </span>
+    </div>
+
+    <div class="content">
+        <div class="ttypography"><p>Hello Codeforces!</p><p>I am glad to invite you to my first official round <a href="/contest/1332" title="Codeforces Round 630 (Div. 2)">Codeforces Round #630 (Div. 2)</a>, which will take place on <a class="contest-time" contestid="1332" href="https://www.timeanddate.com/worldclock/fixedtime.html?day=31&amp;month=3&amp;year=2020&amp;hour=16&amp;min=35&amp;sec=0&amp;p1=166"><span class="format-time-with-dow">Mar/31/2020 16:35 (Moscow time)</span></a> <strong>(please note for the unusual starting time)</strong> and will be rated for <strong>all Division 2 participants</strong>.</p><p>You will be given <strong>7 tasks</strong> and <strong>150 minutes</strong> to solve them.</p><p>All tasks in this round were prepared by me. Hope that you will enjoy those tasks!</p><p>I would like to thank:</p> <ul>   <li><p><a class="rated-user user-orange" href="/profile/pikmike" title="Master pikmike">pikmike</a> for great coordination of this round, and the idea of solution of one task!</p></li>   <li><p><a class="rated-user user-violet" href="/profile/Nanako" title="Candidate Master Nanako">Nanako</a>, <a class="rated-user user-orange" href="/profile/nezzar" title="International master nezzar">nezzar</a> for useful discussion and testing this round!</p></li>   <li><p><a class="rated-user user-red" href="/profile/antontrygubO_o" title="Grandmaster antontrygubO_o">antontrygubO_o</a>, <a class="rated-user user-violet" href="/profile/McDic" title="Candidate Master McDic">McDic</a>, <a class="rated-user user-orange" href="/profile/vovuh" title="Master vovuh">vovuh</a>, <a class="rated-user user-violet" href="/profile/Flowerandyouth" title="Candidate Master Flowerandyouth">Flowerandyouth</a>, <a class="rated-user user-orange" href="/profile/socho" title="Master socho">socho</a>, <a class="rated-user user-blue" href="/profile/Oak_limy" title="Expert Oak_limy">Oak_limy</a>, <a class="rated-user user-violet" href="/profile/Amori" title="Candidate Master Amori">Amori</a>, <a class="rated-user user-blue" href="/profile/Stresshoover" title="Expert Stresshoover">Stresshoover</a>, <a class="rated-user user-violet" href="/profile/I1I1I11I1I1" title="Candidate Master I1I1I11I1I1">I1I1I11I1I1</a>, <a class="rated-user user-blue" href="/profile/defolaut" title="Expert defolaut">defolaut</a>, <a class="rated-user user-green" href="/profile/hx073269" title="Pupil hx073269">hx073269</a> and <a class="rated-user user-green" href="/profile/Pavlova" title="Pupil Pavlova">Pavlova</a> for testing this round and invaluable suggestions!</p></li>   <li><p><a class="rated-user user-admin" href="/profile/MikeMirzayanov" title="Headquarters, MikeMirzayanov">MikeMirzayanov</a> for great systems Codeforces and Polygon!</p></li> </ul><p>To avoid queueforces, we will provide small amount but strong <s>(hope so)</s> pretests for first few tasks. Hope it works!</p><p>Score distribution will be announced later.</p><p>Good luck and have fun!</p><p><strong>UPD1:</strong> Score distribution: 500-1000-1250-1250-1750-2250-3000</p><p><strong>UPD2:</strong> Contest is over, and <a href="https://codeforces.com/blog/entry/75432">here</a> is the editorial.</p></div><p><a href="/blog/entry/75325">Read more »</a></p>
+    </div>
+
+    <div style="font-size: 1.1rem;line-height: 1.1rem;padding-bottom: 0.5em;">
+    <img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" style="vertical-align: middle;"/> <span style="padding: 0 0.35em;">Announcement of <a href="/contest/1332" class="notice" style="text-decoration: none;">Codeforces Round #630 (Div. 2)</a></span>
+    </div>
+
+
+    <div class="roundbox meta" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+        <div class="left-meta">
+            <ul>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-up-75856"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/voteup.png"
+            alt="Vote: I like it" title="Vote: I like it"
+        /></a>
+
+
+</li>
+                    <li style="line-height: 1.6em;">
+
+        
+        <span title="Topic rating" style='font-size:larger;position:relative;bottom:1px;font-weight:bold;color:green'>+644</span>
+        
+</li>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-down-75856"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/votedown.png"
+            alt="Vote: I do not like it" title="Vote: I do not like it"
+        /></a>
+
+
+</li>
+            </ul>
+        </div>
+
+
+        <span style="position: relative; line-height: 1.65em; top: 0.75rem; left: 0.8em;">
+        </span>
+
+        <div class="right-meta">
+            <ul>
+                    <li>        <a href="/profile/triple__a"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/user_16x16.png"
+            alt="Author" title="Author"
+        /></a>
+
+
+        <a href="/profile/triple__a">
+        triple__a
+        </a>
+</li>
+                    <li>        <img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/date_16x16.png"
+            alt="Publication date" title="Publication date"
+        />
+
+
+        
+        <span class="format-humantime" title="Mar/29/2020 08:50">3 days ago</span>
+        
+</li>
+                    <li>        <a href="/blog/entry/75325#comments"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/comments_16x16.png"
+            alt="Comments" title="Comments"
+        /></a>
+
+
+        <a href="/blog/entry/75325#comments">
+        255
+        </a>
+</li>
+            </ul>
+        </div>
+
+        <br style="clear:both;"/>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $(".topic-vote-up-75856").click(function () {
+        $.post("/data/topic/vote", {topicId: 75856, _tta: Codeforces.tta(), topicRevisionId: 182942, vote: +1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+    $(".topic-vote-down-75856").click(function () {
+        $.post("/data/topic/vote", {topicId: 75856, _tta: Codeforces.tta(), topicRevisionId: 182942, vote: -1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+        });
+    </script>
+</div>
+</div>
+<div style="margin-bottom:2em;">
+
+
+<div class="topic" topicId="75709">
+    <div class="title">
+            <a href="/blog/entry/75178">            <p>Codeforces Round #629 (Div. 3)</p>
+</a>
+    </div>
+
+    <div class="info" style="position:relative;">
+            By&nbsp;<a href="/profile/vovuh" title="Master vovuh" class="rated-user user-orange">vovuh</a>,
+                <a href="/topic/75709/en3">history</a>,
+                <span class="format-humantime" title="Mar/25/2020 16:22">6 days ago</span>,
+            translation,
+            <img style="position: relative;top: 5px;" src="//sta.codeforces.com/s/84672/images/flags/24/gb.png" alt="In English" title="In English"/>,
+
+<a class="attach-blogEntry-75178-to-contest-link" href="#"><img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" title="Attach this blog to some contest as a resource"/></a>
+
+<style type="text/css">
+    .attach-blogEntry-75178-to-contest-form tr:not(:last-of-type) td {
+        padding-bottom: 1em;
+    }
+
+    .blogEntry-75178-error {
+        font-size: 1.1rem;
+    }
+</style>
+
+<div class="attach-blogEntry-75178-to-contest-form-holder" style="display: none;padding: 1em;margin: 1em;">
+    <form class="attach-blogEntry-75178-to-contest-form" method="post"><input type='hidden' name='csrf_token' value='ce0ffdf854f99bb95c64318145b57bbf'/>
+        <table style="width: 100%;">
+            <thead>
+            </thead>
+            <tbody>
+        <tr class="subscription-row blogEntry-75178-blogId-error blogEntry-75178-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75178-blogId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-75178-contestId">Contest:</label></td>
+                <td>
+                    <input type="text" style="width: 100%;float: left;" id="blogEntry-75178-contestId" name="contestIdAndName"/>
+                </td>
+                <td>
+                </td>
+            </tr>
+        <tr class="subscription-row blogEntry-75178-contestId-error blogEntry-75178-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75178-contestId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-75178-resourceType">Type:</label></td>
+                <td>
+                    <select id="blogEntry-75178-resourceType" name="resourceType" style="width: 100%;">
+                        <option value="" selected></option>
+                        <option value="STATEMENT">statements</option>
+                        <option value="TUTORIAL">tutorial</option>
+                        <option value="ANNOUNCEMENT">announcement</option>
+                        <option value="DISCUSSION">discussion</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+        <tr class="subscription-row blogEntry-75178-resourceType-error blogEntry-75178-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75178-resourceType">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" id="blogEntry-75178-resource-submit" value="Attach"
+                           style="padding: 0.25em 0.5em;margin: 1em;width: 8em;"/>
+                </td>
+                <td>
+                    <img id="blogEntry-75178-resource-submitting-indicator" src="//sta.codeforces.com/s/84672/images/indicator.gif"
+                         style="display: none;"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".blogEntry-75178-error").hide();
+
+        $(".attach-blogEntry-75178-to-contest-link").click(function () {
+            Codeforces.facebox(".attach-blogEntry-75178-to-contest-form-holder", "//sta.codeforces.com/s/84672");
+
+            var popupContestInput = $("#facebox input[name=contestIdAndName]");
+            popupContestInput.autocomplete("/data/contests?action=suggestContestWithEditableResources", {
+                delay: 200,
+                width: 500,
+                selectFirst: false,
+                matchContains: true,
+                scroll: true,
+                max: 150,
+                minChars: 2
+            });
+
+            $("#facebox .attach-blogEntry-75178-to-contest-form").submit(function () {
+                var contestId = popupContestInput.attr("value").trim().split(/[\- ]/)[0];
+                if (contestId !== undefined) {
+                    $("#facebox .blogEntry-75178-error").hide();
+                    $("#facebox #blogEntry-75178-resource-submitting-indicator").show();
+                    $("#facebox #blogEntry-75178-resource-submit").attr("disabled", "disabled");
+
+                    //noinspection JSUnusedGlobalSymbols
+                    $.post("/data/blogAndContest?action=attachBlogToContest", {
+                        blogId:"37007", contestId:contestId,
+                        blogEntryId:"75178",
+                        resourceType:$("#facebox #blogEntry-75178-resourceType").val()
+                    }, function (json) {
+                        var validated = true;
+
+                        for (var key in json) {
+                            if (json.hasOwnProperty(key) && key.indexOf("error__") === 0) {
+                                validated = false;
+                                $("#facebox .blogEntry-75178-" + key.substring("error__".length) + "-error").show();
+                                $("#facebox .for__blogEntry-75178-" + key.substring("error__".length)).text(json[key]);
+                            }
+                        }
+
+                        $("#facebox #blogEntry-75178-resource-submitting-indicator").hide();
+                        $("#facebox #blogEntry-75178-resource-submit").removeAttr("disabled");
+
+                        if (validated) {
+                            $.facebox.close();
+                            if (json["success"] === "true") {
+                                Codeforces.showMessage("Blog has been successfully attached to selected contest");
+                            } else {
+                                Codeforces.showMessage("There is unexpected error while attaching blog to the contest");
+                            }
+                        }
+                    }, "json");
+                }
+
+                return false;
+            });
+
+
+            return false;
+        });
+    });
+</script>
+
+
+
+        <span style="position:absolute;right:0;top:0.05em;margin-right:1em;display:inline;font-size:0.75em;">
+            <div style="margin-top:0.25em;">
+            </div>
+        </span>
+    </div>
+
+    <div class="content">
+        <div class="ttypography"><p>&lt;almost-copy-pasted-part&gt;</p><p>Hello! <a href="/contest/1328" title="Codeforces Round 629 (Div. 3)">Codeforces Round #629 (Div. 3)</a> will start at <a class="contest-time" contestid="1328" href="https://www.timeanddate.com/worldclock/fixedtime.html?day=26&amp;month=3&amp;year=2020&amp;hour=17&amp;min=35&amp;sec=0&amp;p1=166"><span class="format-time-with-dow">Mar/26/2020 17:35 (Moscow time)</span></a>. You will be offered 6 or 7 problems (or 8) with expected difficulties to compose an interesting competition for participants with ratings up to 1600. However, all of you who wish to take part and have rating 1600 or higher, can register for the round unofficially.</p><p>The round will be hosted by rules of educational rounds (extended ACM-ICPC). Thus, during the round, solutions will be judged on preliminary tests, and after the round it will be a 12-hour phase of open hacks. I tried to make strong tests — just like you will be upset if many solutions fail after the contest is over.</p><p>You will be given 6 or 7 (or 8) problems and 2 hours to solve them.</p><p>Note that <strong>the penalty</strong> for the wrong submission in this round (and the following Div. 3 rounds) is <strong>10 minutes</strong>.</p><p><a href="/blog/entry/59228">Remember</a> that only the <i>trusted participants of the third division</i> will be included in the official standings table. As it is written by link, this is a compulsory measure for combating unsporting behavior. To qualify as a <i>trusted participants of the third division</i>, you must:</p> <ul>   <li>take part in at least two rated rounds (and solve at least one problem in each of them),</li>   <li>do not have a point of 1900 or higher in the rating.</li> </ul><p><b>Regardless of whether you are a <i>trusted participant of the third division</i> or not, if your rating is less than 1600, then the round will be rated for you.</b></p><p>Thanks to <a class="rated-user user-admin" href="/profile/MikeMirzayanov" title="Headquarters, MikeMirzayanov">MikeMirzayanov</a> for the platform, help with ideas for problems and for coordination of my work. Thanks to my good friends Daria <a class="rated-user user-blue" href="/profile/ZeroAmbition" title="Expert ZeroAmbition">ZeroAmbition</a> Stepanova, Mikhail <a class="rated-user user-orange" href="/profile/pikmike" title="Master pikmike">pikmike</a> Piklyaev, Maksim <a class="rated-user user-violet" href="/profile/Ne0n25" title="Candidate Master Ne0n25">Ne0n25</a> Mescheryakov and Ivan <a class="rated-user user-red" href="/profile/BledDest" title="International Grandmaster BledDest">BledDest</a> Androsov for help in round preparation and testing the round.</p><p>Good luck!</p><p>&lt;/almost-copy-pasted-part&gt;</p><p>Thanks to Artem <a class="rated-user user-violet" href="/profile/Rox" title="Candidate Master Rox">Rox</a> Plotkin and Dmitrii <a class="rated-user user-orange" href="/profile/_overrated_" title="Master _overrated_">_overrated_</a> Umnov for help with testing the round!</p><p><strong>UPD</strong>: Also thanks to Vitaliy <a class="rated-user user-orange" href="/profile/kuviman" title="Master kuviman">kuviman</a> Kudasov for testing the round!</p><p><strong>UPD2</strong>: <a href="https://codeforces.com/blog/entry/75246">Editorial</a> is published!</p></div><p><a href="/blog/entry/75178">Read more »</a></p>
+    </div>
+
+    <div style="font-size: 1.1rem;line-height: 1.1rem;padding-bottom: 0.5em;">
+    <img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" style="vertical-align: middle;"/> <span style="padding: 0 0.35em;">Announcement of <a href="/contest/1328" class="notice" style="text-decoration: none;">Codeforces Round #629 (Div. 3)</a></span>
+    </div>
+
+        <div style="font-size: 1.1rem;line-height: 11px;">
+            <img style="vertical-align: middle;" src="//sta.codeforces.com/s/84672/images/blog/tags.png" title="Tags" alt="Tags"/>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=codeforces" class="tag notice" style="text-decoration: none;">codeforces</a>,
+                </span>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=629" class="tag notice" style="text-decoration: none;">629</a>,
+                </span>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=third+division" class="tag notice" style="text-decoration: none;">third division</a>
+                </span>
+        </div>
+
+    <div class="roundbox meta" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+        <div class="left-meta">
+            <ul>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-up-75709"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/voteup.png"
+            alt="Vote: I like it" title="Vote: I like it"
+        /></a>
+
+
+</li>
+                    <li style="line-height: 1.6em;">
+
+        
+        <span title="Topic rating" style='font-size:larger;position:relative;bottom:1px;font-weight:bold;color:green'>+332</span>
+        
+</li>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-down-75709"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/votedown.png"
+            alt="Vote: I do not like it" title="Vote: I do not like it"
+        /></a>
+
+
+</li>
+            </ul>
+        </div>
+
+
+        <span style="position: relative; line-height: 1.65em; top: 0.75rem; left: 0.8em;">
+        </span>
+
+        <div class="right-meta">
+            <ul>
+                    <li>        <a href="/profile/vovuh"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/user_16x16.png"
+            alt="Author" title="Author"
+        /></a>
+
+
+        <a href="/profile/vovuh">
+        vovuh
+        </a>
+</li>
+                    <li>        <img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/date_16x16.png"
+            alt="Publication date" title="Publication date"
+        />
+
+
+        
+        <span class="format-humantime" title="Mar/25/2020 16:22">6 days ago</span>
+        
+</li>
+                    <li>        <a href="/blog/entry/75178#comments"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/comments_16x16.png"
+            alt="Comments" title="Comments"
+        /></a>
+
+
+        <a href="/blog/entry/75178#comments">
+        364
+        </a>
+</li>
+            </ul>
+        </div>
+
+        <br style="clear:both;"/>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $(".topic-vote-up-75709").click(function () {
+        $.post("/data/topic/vote", {topicId: 75709, _tta: Codeforces.tta(), topicRevisionId: 182310, vote: +1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+    $(".topic-vote-down-75709").click(function () {
+        $.post("/data/topic/vote", {topicId: 75709, _tta: Codeforces.tta(), topicRevisionId: 182310, vote: -1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+        });
+    </script>
+</div>
+</div>
+<div style="margin-bottom:2em;">
+
+
+<div class="topic" topicId="75613">
+    <div class="title">
+            <a href="/blog/entry/75082">            <p>Educational Codeforces Round 84 [Rated for Div. 2]</p>
+</a>
+    </div>
+
+    <div class="info" style="position:relative;">
+            By&nbsp;<a href="/profile/pikmike" title="Master pikmike" class="rated-user user-orange">pikmike</a>,
+                <a href="/topic/75613/en6">history</a>,
+                <span class="format-humantime" title="Mar/22/2020 16:44">9 days ago</span>,
+            translation,
+            <img style="position: relative;top: 5px;" src="//sta.codeforces.com/s/84672/images/flags/24/gb.png" alt="In English" title="In English"/>,
+
+<a class="attach-blogEntry-75082-to-contest-link" href="#"><img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" title="Attach this blog to some contest as a resource"/></a>
+
+<style type="text/css">
+    .attach-blogEntry-75082-to-contest-form tr:not(:last-of-type) td {
+        padding-bottom: 1em;
+    }
+
+    .blogEntry-75082-error {
+        font-size: 1.1rem;
+    }
+</style>
+
+<div class="attach-blogEntry-75082-to-contest-form-holder" style="display: none;padding: 1em;margin: 1em;">
+    <form class="attach-blogEntry-75082-to-contest-form" method="post"><input type='hidden' name='csrf_token' value='ce0ffdf854f99bb95c64318145b57bbf'/>
+        <table style="width: 100%;">
+            <thead>
+            </thead>
+            <tbody>
+        <tr class="subscription-row blogEntry-75082-blogId-error blogEntry-75082-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75082-blogId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-75082-contestId">Contest:</label></td>
+                <td>
+                    <input type="text" style="width: 100%;float: left;" id="blogEntry-75082-contestId" name="contestIdAndName"/>
+                </td>
+                <td>
+                </td>
+            </tr>
+        <tr class="subscription-row blogEntry-75082-contestId-error blogEntry-75082-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75082-contestId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-75082-resourceType">Type:</label></td>
+                <td>
+                    <select id="blogEntry-75082-resourceType" name="resourceType" style="width: 100%;">
+                        <option value="" selected></option>
+                        <option value="STATEMENT">statements</option>
+                        <option value="TUTORIAL">tutorial</option>
+                        <option value="ANNOUNCEMENT">announcement</option>
+                        <option value="DISCUSSION">discussion</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+        <tr class="subscription-row blogEntry-75082-resourceType-error blogEntry-75082-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75082-resourceType">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" id="blogEntry-75082-resource-submit" value="Attach"
+                           style="padding: 0.25em 0.5em;margin: 1em;width: 8em;"/>
+                </td>
+                <td>
+                    <img id="blogEntry-75082-resource-submitting-indicator" src="//sta.codeforces.com/s/84672/images/indicator.gif"
+                         style="display: none;"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".blogEntry-75082-error").hide();
+
+        $(".attach-blogEntry-75082-to-contest-link").click(function () {
+            Codeforces.facebox(".attach-blogEntry-75082-to-contest-form-holder", "//sta.codeforces.com/s/84672");
+
+            var popupContestInput = $("#facebox input[name=contestIdAndName]");
+            popupContestInput.autocomplete("/data/contests?action=suggestContestWithEditableResources", {
+                delay: 200,
+                width: 500,
+                selectFirst: false,
+                matchContains: true,
+                scroll: true,
+                max: 150,
+                minChars: 2
+            });
+
+            $("#facebox .attach-blogEntry-75082-to-contest-form").submit(function () {
+                var contestId = popupContestInput.attr("value").trim().split(/[\- ]/)[0];
+                if (contestId !== undefined) {
+                    $("#facebox .blogEntry-75082-error").hide();
+                    $("#facebox #blogEntry-75082-resource-submitting-indicator").show();
+                    $("#facebox #blogEntry-75082-resource-submit").attr("disabled", "disabled");
+
+                    //noinspection JSUnusedGlobalSymbols
+                    $.post("/data/blogAndContest?action=attachBlogToContest", {
+                        blogId:"42750", contestId:contestId,
+                        blogEntryId:"75082",
+                        resourceType:$("#facebox #blogEntry-75082-resourceType").val()
+                    }, function (json) {
+                        var validated = true;
+
+                        for (var key in json) {
+                            if (json.hasOwnProperty(key) && key.indexOf("error__") === 0) {
+                                validated = false;
+                                $("#facebox .blogEntry-75082-" + key.substring("error__".length) + "-error").show();
+                                $("#facebox .for__blogEntry-75082-" + key.substring("error__".length)).text(json[key]);
+                            }
+                        }
+
+                        $("#facebox #blogEntry-75082-resource-submitting-indicator").hide();
+                        $("#facebox #blogEntry-75082-resource-submit").removeAttr("disabled");
+
+                        if (validated) {
+                            $.facebox.close();
+                            if (json["success"] === "true") {
+                                Codeforces.showMessage("Blog has been successfully attached to selected contest");
+                            } else {
+                                Codeforces.showMessage("There is unexpected error while attaching blog to the contest");
+                            }
+                        }
+                    }, "json");
+                }
+
+                return false;
+            });
+
+
+            return false;
+        });
+    });
+</script>
+
+
+
+        <span style="position:absolute;right:0;top:0.05em;margin-right:1em;display:inline;font-size:0.75em;">
+            <div style="margin-top:0.25em;">
+            </div>
+        </span>
+    </div>
+
+    <div class="content">
+        <div class="ttypography"><p>Hello Codeforces!</p><p>On <a class="contest-time" contestid="1327" href="https://www.timeanddate.com/worldclock/fixedtime.html?day=23&amp;month=3&amp;year=2020&amp;hour=17&amp;min=35&amp;sec=0&amp;p1=166"><span class="format-time-with-dow">Mar/23/2020 17:35 (Moscow time)</span></a> <a href="/contest/1327" title="Educational Codeforces Round 84 (Rated for Div. 2)">Educational Codeforces Round 84 (Rated for Div. 2)</a> will start.</p><p>Series of Educational Rounds continue being held as <a href="https://harbour.space/">Harbour.Space University</a> initiative! You can read the details about the cooperation between <a href="https://harbour.space/">Harbour.Space University</a> and Codeforces in the <a href="//codeforces.com/blog/entry/51208">blog post</a>.</p><p>This round will be <strong>rated for the participants with rating lower than 2100</strong>. It will be held on extended ICPC rules. The penalty for each incorrect submission until the submission with a full solution is 10 minutes. After the end of the contest you will have 12 hours to hack any solution you want. You will have access to copy any solution and test it locally.</p><p>You will be given <strong>7 problems</strong> and <strong>2 hours</strong> to solve them.</p><p>The problems were invented and prepared by Roman <a class="rated-user user-orange" href="/profile/Roms" title="Master Roms">Roms</a> Glazov, Adilbek <a class="rated-user user-orange" href="/profile/adedalic" title="International master adedalic">adedalic</a> Dalabaev, Vladimir <a class="rated-user user-orange" href="/profile/vovuh" title="Master vovuh">vovuh</a> Petrov, Ivan <a class="rated-user user-red" href="/profile/BledDest" title="International Grandmaster BledDest">BledDest</a> Androsov, Maksim <a class="rated-user user-violet" href="/profile/Ne0n25" title="Candidate Master Ne0n25">Ne0n25</a> Mescheryakov and me. Also huge thanks to Mike <a class="rated-user user-admin" href="/profile/MikeMirzayanov" title="Headquarters, MikeMirzayanov">MikeMirzayanov</a> Mirzayanov for great systems Polygon and Codeforces.</p><p>Good luck to all the participants!</p><p>Congratulations to the winners: <table>  <tbody>  <tr>  <th>Rank</th>  <th>Competitor</th>  <th>Problems Solved</th>  <th>Penalty</th>  </tr>  <tr>  <td>1</td>  <td><a class="rated-user user-legendary" href="/profile/MiFaFaOvO" title="Legendary grandmaster MiFaFaOvO"><span class="legendary-user-first-letter">M</span>iFaFaOvO</a></td>  <td>7</td>  <td>230</td>  </tr>  <tr>  <td>2</td>  <td><a class="rated-user user-red" href="/profile/Volkov_Ivan" title="Grandmaster Volkov_Ivan">Volkov_Ivan</a></td>  <td>7</td>  <td>272</td>  </tr>  <tr>  <td>3</td>  <td><a class="rated-user user-red" href="/profile/Egor" title="International Grandmaster Egor">Egor</a></td>  <td>7</td>  <td>343</td>  </tr>  <tr>  <td>4</td>  <td><a class="rated-user user-orange" href="/profile/2829908231" title="Master 2829908231">2829908231</a></td>  <td>7</td>  <td>360</td>  </tr>  <tr>  <td>5</td>  <td><a class="rated-user user-blue" href="/profile/rainboy" title="Expert rainboy">rainboy</a></td>  <td>7</td>  <td>707</td>  </tr>  </tbody> </table></p><p>Congratulations to the best hackers: <table>  <tbody>  <tr>  <th>Rank</th>  <th>Competitor</th>  <th>Hack Count</th>  </tr>  <tr>  <td>1</td>  <td><a class="rated-user user-violet" href="/profile/theStaticMind" title="Candidate Master theStaticMind">theStaticMind</a></td>  <td><b><font color="green">14</font></b><b>:<font color="red">-8</font></b></td>  </tr>  <tr>  <td>2</td>  <td><a class="rated-user user-blue" href="/profile/Chrollo_Lucifer" title="Expert Chrollo_Lucifer">Chrollo_Lucifer</a></td>  <td><b><font color="green">5</font></b><b>:<font color="red">-1</font></b></td>  </tr>  <tr>  <td>3</td>  <td><a class="rated-user user-violet" href="/profile/Learner" title="Candidate Master Learner">Learner</a></td>  <td><b><font color="green">10</font></b><b>:<font color="red">-13</font></b></td>  </tr>  <tr>  <td>4</td>  <td><a class="rated-user user-green" href="/profile/RitikBaid" title="Pupil RitikBaid">RitikBaid</a></td>  <td><b><font color="green">3</font></b></td>  </tr>  <tr>  <td>5</td>  <td><a class="rated-user user-blue" href="/profile/Ashiok" title="Expert Ashiok">Ashiok</a></td>  <td><b><font color="green">4</font></b><b>:<font color="red">-3</font></b></td>  </tr>  </tbody> </table> 139 successful hacks and 617 unsuccessful hacks were made in total!</p><p>And finally people who were the first to solve each problem: <table>  <tbody>  <tr>  <th>Problem</th>  <th>Competitor</th>  <th>Penalty</th>  </tr>  <tr>  <td>A</td>  <td><a class="rated-user user-violet" href="/profile/fextivity" title="Candidate Master fextivity">fextivity</a></td>  <td>0:01</td>  </tr>  <tr>  <td>B</td>  <td><a class="rated-user user-red" href="/profile/Sonechko" title="Grandmaster Sonechko">Sonechko</a></td>  <td>0:05</td>  </tr>  <tr>  <td>C</td>  <td><a class="rated-user user-violet" href="/profile/Isaunoya" title="Candidate Master Isaunoya">Isaunoya</a></td>  <td>0:05</td>  </tr>  <tr>  <td>D</td>  <td><a class="rated-user user-legendary" href="/profile/MiFaFaOvO" title="Legendary grandmaster MiFaFaOvO"><span class="legendary-user-first-letter">M</span>iFaFaOvO</a></td>  <td>0:10</td>  </tr>  <tr>  <td>E</td>  <td><a class="rated-user user-orange" href="/profile/Medeowex" title="International master Medeowex">Medeowex</a></td>  <td>0:11</td>  </tr>  <tr>  <td>F</td>  <td><a class="rated-user user-orange" href="/profile/YangDavid" title="International master YangDavid">YangDavid</a></td>  <td>0:35</td>  </tr>  <tr>  <td>G</td>  <td><a class="rated-user user-blue" href="/profile/rainboy" title="Expert rainboy">rainboy</a></td>  <td>0:44</td>  </tr>  </tbody> </table></p><p><strong>UPD:</strong> <a href="https://codeforces.com/blog/entry/75147">Editorial is out</a></p></div><p><a href="/blog/entry/75082">Read more »</a></p>
+    </div>
+
+    <div style="font-size: 1.1rem;line-height: 1.1rem;padding-bottom: 0.5em;">
+    <img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" style="vertical-align: middle;"/> <span style="padding: 0 0.35em;">Announcement of <a href="/contest/1327" class="notice" style="text-decoration: none;">Educational Codeforces Round 84 (Rated for Div. 2)</a></span>
+    </div>
+
+
+    <div class="roundbox meta" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+        <div class="left-meta">
+            <ul>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-up-75613"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/voteup.png"
+            alt="Vote: I like it" title="Vote: I like it"
+        /></a>
+
+
+</li>
+                    <li style="line-height: 1.6em;">
+
+        
+        <span title="Topic rating" style='font-size:larger;position:relative;bottom:1px;font-weight:bold;color:green'>+344</span>
+        
+</li>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-down-75613"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/votedown.png"
+            alt="Vote: I do not like it" title="Vote: I do not like it"
+        /></a>
+
+
+</li>
+            </ul>
+        </div>
+
+
+        <span style="position: relative; line-height: 1.65em; top: 0.75rem; left: 0.8em;">
+        </span>
+
+        <div class="right-meta">
+            <ul>
+                    <li>        <a href="/profile/pikmike"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/user_16x16.png"
+            alt="Author" title="Author"
+        /></a>
+
+
+        <a href="/profile/pikmike">
+        pikmike
+        </a>
+</li>
+                    <li>        <img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/date_16x16.png"
+            alt="Publication date" title="Publication date"
+        />
+
+
+        
+        <span class="format-humantime" title="Mar/22/2020 16:44">9 days ago</span>
+        
+</li>
+                    <li>        <a href="/blog/entry/75082#comments"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/comments_16x16.png"
+            alt="Comments" title="Comments"
+        /></a>
+
+
+        <a href="/blog/entry/75082#comments">
+        350
+        </a>
+</li>
+            </ul>
+        </div>
+
+        <br style="clear:both;"/>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $(".topic-vote-up-75613").click(function () {
+        $.post("/data/topic/vote", {topicId: 75613, _tta: Codeforces.tta(), topicRevisionId: 182035, vote: +1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+    $(".topic-vote-down-75613").click(function () {
+        $.post("/data/topic/vote", {topicId: 75613, _tta: Codeforces.tta(), topicRevisionId: 182035, vote: -1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+        });
+    </script>
+</div>
+</div>
+<div style="margin-bottom:2em;">
+
+
+<div class="topic" topicId="75535">
+    <div class="title">
+            <a href="/blog/entry/75004">            <p>Codeforces: С++17 64bit Support</p>
+</a>
+    </div>
+
+    <div class="info" style="position:relative;">
+            By&nbsp;<a href="/profile/MikeMirzayanov" title="Headquarters, MikeMirzayanov" class="rated-user user-admin">MikeMirzayanov</a>,
+                <span class="format-humantime" title="Mar/20/2020 20:48">11 days ago</span>,
+            
+            <img style="position: relative;top: 5px;" src="//sta.codeforces.com/s/84672/images/flags/24/gb.png" alt="In English" title="In English"/>,
+
+<a class="attach-blogEntry-75004-to-contest-link" href="#"><img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" title="Attach this blog to some contest as a resource"/></a>
+
+<style type="text/css">
+    .attach-blogEntry-75004-to-contest-form tr:not(:last-of-type) td {
+        padding-bottom: 1em;
+    }
+
+    .blogEntry-75004-error {
+        font-size: 1.1rem;
+    }
+</style>
+
+<div class="attach-blogEntry-75004-to-contest-form-holder" style="display: none;padding: 1em;margin: 1em;">
+    <form class="attach-blogEntry-75004-to-contest-form" method="post"><input type='hidden' name='csrf_token' value='ce0ffdf854f99bb95c64318145b57bbf'/>
+        <table style="width: 100%;">
+            <thead>
+            </thead>
+            <tbody>
+        <tr class="subscription-row blogEntry-75004-blogId-error blogEntry-75004-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75004-blogId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-75004-contestId">Contest:</label></td>
+                <td>
+                    <input type="text" style="width: 100%;float: left;" id="blogEntry-75004-contestId" name="contestIdAndName"/>
+                </td>
+                <td>
+                </td>
+            </tr>
+        <tr class="subscription-row blogEntry-75004-contestId-error blogEntry-75004-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75004-contestId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-75004-resourceType">Type:</label></td>
+                <td>
+                    <select id="blogEntry-75004-resourceType" name="resourceType" style="width: 100%;">
+                        <option value="" selected></option>
+                        <option value="STATEMENT">statements</option>
+                        <option value="TUTORIAL">tutorial</option>
+                        <option value="ANNOUNCEMENT">announcement</option>
+                        <option value="DISCUSSION">discussion</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+        <tr class="subscription-row blogEntry-75004-resourceType-error blogEntry-75004-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-75004-resourceType">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" id="blogEntry-75004-resource-submit" value="Attach"
+                           style="padding: 0.25em 0.5em;margin: 1em;width: 8em;"/>
+                </td>
+                <td>
+                    <img id="blogEntry-75004-resource-submitting-indicator" src="//sta.codeforces.com/s/84672/images/indicator.gif"
+                         style="display: none;"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".blogEntry-75004-error").hide();
+
+        $(".attach-blogEntry-75004-to-contest-link").click(function () {
+            Codeforces.facebox(".attach-blogEntry-75004-to-contest-form-holder", "//sta.codeforces.com/s/84672");
+
+            var popupContestInput = $("#facebox input[name=contestIdAndName]");
+            popupContestInput.autocomplete("/data/contests?action=suggestContestWithEditableResources", {
+                delay: 200,
+                width: 500,
+                selectFirst: false,
+                matchContains: true,
+                scroll: true,
+                max: 150,
+                minChars: 2
+            });
+
+            $("#facebox .attach-blogEntry-75004-to-contest-form").submit(function () {
+                var contestId = popupContestInput.attr("value").trim().split(/[\- ]/)[0];
+                if (contestId !== undefined) {
+                    $("#facebox .blogEntry-75004-error").hide();
+                    $("#facebox #blogEntry-75004-resource-submitting-indicator").show();
+                    $("#facebox #blogEntry-75004-resource-submit").attr("disabled", "disabled");
+
+                    //noinspection JSUnusedGlobalSymbols
+                    $.post("/data/blogAndContest?action=attachBlogToContest", {
+                        blogId:"1", contestId:contestId,
+                        blogEntryId:"75004",
+                        resourceType:$("#facebox #blogEntry-75004-resourceType").val()
+                    }, function (json) {
+                        var validated = true;
+
+                        for (var key in json) {
+                            if (json.hasOwnProperty(key) && key.indexOf("error__") === 0) {
+                                validated = false;
+                                $("#facebox .blogEntry-75004-" + key.substring("error__".length) + "-error").show();
+                                $("#facebox .for__blogEntry-75004-" + key.substring("error__".length)).text(json[key]);
+                            }
+                        }
+
+                        $("#facebox #blogEntry-75004-resource-submitting-indicator").hide();
+                        $("#facebox #blogEntry-75004-resource-submit").removeAttr("disabled");
+
+                        if (validated) {
+                            $.facebox.close();
+                            if (json["success"] === "true") {
+                                Codeforces.showMessage("Blog has been successfully attached to selected contest");
+                            } else {
+                                Codeforces.showMessage("There is unexpected error while attaching blog to the contest");
+                            }
+                        }
+                    }, "json");
+                }
+
+                return false;
+            });
+
+
+            return false;
+        });
+    });
+</script>
+
+
+
+        <span style="position:absolute;right:0;top:0.05em;margin-right:1em;display:inline;font-size:0.75em;">
+            <div style="margin-top:0.25em;">
+            </div>
+        </span>
+    </div>
+
+    <div class="content">
+        <div class="ttypography"><p>Hello, Codeforces.</p><p>I hope you wash your hands and feel great.</p><p>I added the support of 64-bit g++. If you are using Windows, you can easily install it via our minimalistic package manager <a href="http://pbox.me/">PBOX</a> running the command line <code>pbox install msys2-mingw64-9</code>.</p><p>Your solutions are compiled with the command line <code>g++ -static -DONLINE_JUDGE -Wl,--stack=268435456 -O2 -std=c++17 program.cpp</code>.</p><p>Now you can try to use int128 and other 64-bit specific features! In fact, I am slightly worried that the presence of such features may widen the gap between C ++ and other languages. Wait and see.</p><p>Currently, support for 64-bit C++ is experimental. For example, I would not be surprised if IO on it works slower in some cases (it is necessary to test!). I invite you to join the testing and experimentations. Share your impressions in the comments!</p></div><p><a href="/blog/entry/75004">Read more »</a></p>
+    </div>
+
+
+        <div style="font-size: 1.1rem;line-height: 11px;">
+            <img style="vertical-align: middle;" src="//sta.codeforces.com/s/84672/images/blog/tags.png" title="Tags" alt="Tags"/>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=g%2B%2B" class="tag notice" style="text-decoration: none;">g++</a>,
+                </span>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=64bit" class="tag notice" style="text-decoration: none;">64bit</a>,
+                </span>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=int64" class="tag notice" style="text-decoration: none;">int64</a>
+                </span>
+        </div>
+
+    <div class="roundbox meta" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+        <div class="left-meta">
+            <ul>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-up-75535"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/voteup.png"
+            alt="Vote: I like it" title="Vote: I like it"
+        /></a>
+
+
+</li>
+                    <li style="line-height: 1.6em;">
+
+        
+        <span title="Topic rating" style='font-size:larger;position:relative;bottom:1px;font-weight:bold;color:green'>+2469</span>
+        
+</li>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-down-75535"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/votedown.png"
+            alt="Vote: I do not like it" title="Vote: I do not like it"
+        /></a>
+
+
+</li>
+            </ul>
+        </div>
+
+
+        <span style="position: relative; line-height: 1.65em; top: 0.75rem; left: 0.8em;">
+        </span>
+
+        <div class="right-meta">
+            <ul>
+                    <li>        <a href="/profile/MikeMirzayanov"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/user_16x16.png"
+            alt="Author" title="Author"
+        /></a>
+
+
+        <a href="/profile/MikeMirzayanov">
+        MikeMirzayanov
+        </a>
+</li>
+                    <li>        <img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/date_16x16.png"
+            alt="Publication date" title="Publication date"
+        />
+
+
+        
+        <span class="format-humantime" title="Mar/20/2020 20:48">11 days ago</span>
+        
+</li>
+                    <li>        <a href="/blog/entry/75004#comments"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/comments_16x16.png"
+            alt="Comments" title="Comments"
+        /></a>
+
+
+        <a href="/blog/entry/75004#comments">
+        108
+        </a>
+</li>
+            </ul>
+        </div>
+
+        <br style="clear:both;"/>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $(".topic-vote-up-75535").click(function () {
+        $.post("/data/topic/vote", {topicId: 75535, _tta: Codeforces.tta(), topicRevisionId: 181637, vote: +1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+    $(".topic-vote-down-75535").click(function () {
+        $.post("/data/topic/vote", {topicId: 75535, _tta: Codeforces.tta(), topicRevisionId: 181637, vote: -1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+        });
+    </script>
+</div>
+</div>
+<div style="margin-bottom:2em;">
+
+
+<div class="topic" topicId="75420">
+    <div class="title">
+            <a href="/blog/entry/74889">            <p>Codeforces Global Round 7</p>
+</a>
+    </div>
+
+    <div class="info" style="position:relative;">
+            By&nbsp;<a href="/profile/300iq" title="Legendary grandmaster 300iq" class="rated-user user-legendary"><span class="legendary-user-first-letter">3</span>00iq</a>,
+                <span class="format-humantime" title="Mar/17/2020 22:00">2 weeks ago</span>,
+            
+            <img style="position: relative;top: 5px;" src="//sta.codeforces.com/s/84672/images/flags/24/gb.png" alt="In English" title="In English"/>,
+
+<a class="attach-blogEntry-74889-to-contest-link" href="#"><img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" title="Attach this blog to some contest as a resource"/></a>
+
+<style type="text/css">
+    .attach-blogEntry-74889-to-contest-form tr:not(:last-of-type) td {
+        padding-bottom: 1em;
+    }
+
+    .blogEntry-74889-error {
+        font-size: 1.1rem;
+    }
+</style>
+
+<div class="attach-blogEntry-74889-to-contest-form-holder" style="display: none;padding: 1em;margin: 1em;">
+    <form class="attach-blogEntry-74889-to-contest-form" method="post"><input type='hidden' name='csrf_token' value='ce0ffdf854f99bb95c64318145b57bbf'/>
+        <table style="width: 100%;">
+            <thead>
+            </thead>
+            <tbody>
+        <tr class="subscription-row blogEntry-74889-blogId-error blogEntry-74889-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-74889-blogId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-74889-contestId">Contest:</label></td>
+                <td>
+                    <input type="text" style="width: 100%;float: left;" id="blogEntry-74889-contestId" name="contestIdAndName"/>
+                </td>
+                <td>
+                </td>
+            </tr>
+        <tr class="subscription-row blogEntry-74889-contestId-error blogEntry-74889-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-74889-contestId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-74889-resourceType">Type:</label></td>
+                <td>
+                    <select id="blogEntry-74889-resourceType" name="resourceType" style="width: 100%;">
+                        <option value="" selected></option>
+                        <option value="STATEMENT">statements</option>
+                        <option value="TUTORIAL">tutorial</option>
+                        <option value="ANNOUNCEMENT">announcement</option>
+                        <option value="DISCUSSION">discussion</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+        <tr class="subscription-row blogEntry-74889-resourceType-error blogEntry-74889-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-74889-resourceType">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" id="blogEntry-74889-resource-submit" value="Attach"
+                           style="padding: 0.25em 0.5em;margin: 1em;width: 8em;"/>
+                </td>
+                <td>
+                    <img id="blogEntry-74889-resource-submitting-indicator" src="//sta.codeforces.com/s/84672/images/indicator.gif"
+                         style="display: none;"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".blogEntry-74889-error").hide();
+
+        $(".attach-blogEntry-74889-to-contest-link").click(function () {
+            Codeforces.facebox(".attach-blogEntry-74889-to-contest-form-holder", "//sta.codeforces.com/s/84672");
+
+            var popupContestInput = $("#facebox input[name=contestIdAndName]");
+            popupContestInput.autocomplete("/data/contests?action=suggestContestWithEditableResources", {
+                delay: 200,
+                width: 500,
+                selectFirst: false,
+                matchContains: true,
+                scroll: true,
+                max: 150,
+                minChars: 2
+            });
+
+            $("#facebox .attach-blogEntry-74889-to-contest-form").submit(function () {
+                var contestId = popupContestInput.attr("value").trim().split(/[\- ]/)[0];
+                if (contestId !== undefined) {
+                    $("#facebox .blogEntry-74889-error").hide();
+                    $("#facebox #blogEntry-74889-resource-submitting-indicator").show();
+                    $("#facebox #blogEntry-74889-resource-submit").attr("disabled", "disabled");
+
+                    //noinspection JSUnusedGlobalSymbols
+                    $.post("/data/blogAndContest?action=attachBlogToContest", {
+                        blogId:"52877", contestId:contestId,
+                        blogEntryId:"74889",
+                        resourceType:$("#facebox #blogEntry-74889-resourceType").val()
+                    }, function (json) {
+                        var validated = true;
+
+                        for (var key in json) {
+                            if (json.hasOwnProperty(key) && key.indexOf("error__") === 0) {
+                                validated = false;
+                                $("#facebox .blogEntry-74889-" + key.substring("error__".length) + "-error").show();
+                                $("#facebox .for__blogEntry-74889-" + key.substring("error__".length)).text(json[key]);
+                            }
+                        }
+
+                        $("#facebox #blogEntry-74889-resource-submitting-indicator").hide();
+                        $("#facebox #blogEntry-74889-resource-submit").removeAttr("disabled");
+
+                        if (validated) {
+                            $.facebox.close();
+                            if (json["success"] === "true") {
+                                Codeforces.showMessage("Blog has been successfully attached to selected contest");
+                            } else {
+                                Codeforces.showMessage("There is unexpected error while attaching blog to the contest");
+                            }
+                        }
+                    }, "json");
+                }
+
+                return false;
+            });
+
+
+            return false;
+        });
+    });
+</script>
+
+
+
+        <span style="position:absolute;right:0;top:0.05em;margin-right:1em;display:inline;font-size:0.75em;">
+            <div style="margin-top:0.25em;">
+            </div>
+        </span>
+    </div>
+
+    <div class="content">
+        <div class="ttypography"><p><img src="/predownloaded/2e/e2/2ee2f0f95f05aae6ca6f47812dae2dc2aabf277b.png" style="width: 200.0px;float: right;margin: 0 1.0em 1.0em 1.0em;max-width: 100.0%;max-height: 100.0%;" /></p><p>Hi!</p><p>On <a class="contest-time" contestid="1326" href="https://www.timeanddate.com/worldclock/fixedtime.html?day=19&amp;month=3&amp;year=2020&amp;hour=17&amp;min=35&amp;sec=0&amp;p1=166"><span class="format-time-with-dow">Mar/19/2020 17:35 (Moscow time)</span></a> we will host <a href="/contest/1326" title="Codeforces Global Round 7">Codeforces Global Round 7</a>.</p><p>It is the first round of a 2020 series of <a href="/blog/entry/65002">Codeforces Global Rounds</a>. The rounds are open for everybody, the rating will be updated for everybody.</p><p>The prizes for this round:</p> <ul>   <li>30 best participants get a t-shirt.</li>   <li>20 t-shirts are randomly distributed among those with ranks between 31 and 500, inclusive.</li> </ul><p>The prizes for the 6-round series in 2020:</p> <ul>   <li>In each round top-100 participants get points according to the <a href="https://pastebin.com/QT5sXEaT">table</a>.</li>   <li>The final result for each participant is equal to the sum of points he gets in the four rounds he placed the highest.</li>   <li>The best 20 participants over all series get sweatshirts and place certificates.</li> </ul><p>The problems of this round were developed by <a class="rated-user user-red" href="/profile/isaf27" title="International Grandmaster isaf27">isaf27</a> and me. Thanks to the testers <a class="rated-user user-orange" href="/profile/mohammedehab2002" title="Master mohammedehab2002">mohammedehab2002</a>, <a class="rated-user user-orange" href="/profile/Taran_1407" title="Master Taran_1407">Taran_1407</a>, <a class="rated-user user-red" href="/profile/Aleks5d" title="Grandmaster Aleks5d">Aleks5d</a>, <a class="rated-user user-legendary" href="/profile/Endagorion" title="Legendary grandmaster Endagorion"><span class="legendary-user-first-letter">E</span>ndagorion</a>, <a class="rated-user user-orange" href="/profile/74traktor" title="International master 74traktor">74traktor</a>, <a class="rated-user user-legendary" href="/profile/HIR180" title="Legendary grandmaster HIR180"><span class="legendary-user-first-letter">H</span>IR180</a>, <a class="rated-user user-orange" href="/profile/dlwocks31" title="Master dlwocks31">dlwocks31</a>,<a class="rated-user user-violet" href="/profile/ToTheMoon" title="Candidate Master ToTheMoon">ToTheMoon</a>, <a class="rated-user user-violet" href="/profile/coyorkdow" title="Candidate Master coyorkdow">coyorkdow</a>, <a class="rated-user user-blue" href="/profile/Tzak" title="Expert Tzak">Tzak</a>, <a class="rated-user user-orange" href="/profile/DomiKo" title="Master DomiKo">DomiKo</a>, <a class="rated-user user-blue" href="/profile/JustasLe" title="Expert JustasLe">JustasLe</a>, <a class="rated-user user-violet" href="/profile/Hyado" title="Candidate Master Hyado">Hyado</a>, <a class="rated-user user-blue" href="/profile/Nemo" title="Expert Nemo">Nemo</a>, <a class="rated-user user-blue" href="/profile/tattosha_aptan" title="Expert tattosha_aptan">tattosha_aptan</a>, <a class="rated-user user-red" href="/profile/Jatana" title="Grandmaster Jatana">Jatana</a>, and (language corrector!) <a class="rated-user user-blue" href="/profile/caoash" title="Expert caoash">caoash</a>.</p><p>Thanks to XTX, which in 2020 supported the global rounds initiative!</p><p>Good luck!</p><p><strong>UPD:</strong> Score distribution: 500 1000 1000 (1000-1000) 2500 (2000-1500) 4000</p><p><strong>UPD:</strong> <a href="https://codeforces.com/blog/entry/74961">Editorial!</a></p></div><p><a href="/blog/entry/74889">Read more »</a></p>
+    </div>
+
+    <div style="font-size: 1.1rem;line-height: 1.1rem;padding-bottom: 0.5em;">
+    <img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" style="vertical-align: middle;"/> <span style="padding: 0 0.35em;">Announcement of <a href="/contest/1326" class="notice" style="text-decoration: none;">Codeforces Global Round 7</a></span>
+    </div>
+
+        <div style="font-size: 1.1rem;line-height: 11px;">
+            <img style="vertical-align: middle;" src="//sta.codeforces.com/s/84672/images/blog/tags.png" title="Tags" alt="Tags"/>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=globals" class="tag notice" style="text-decoration: none;">globals</a>,
+                </span>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=global" class="tag notice" style="text-decoration: none;">global</a>
+                </span>
+        </div>
+
+    <div class="roundbox meta" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+        <div class="left-meta">
+            <ul>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-up-75420"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/voteup.png"
+            alt="Vote: I like it" title="Vote: I like it"
+        /></a>
+
+
+</li>
+                    <li style="line-height: 1.6em;">
+
+        
+        <span title="Topic rating" style='font-size:larger;position:relative;bottom:1px;font-weight:bold;color:green'>+561</span>
+        
+</li>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-down-75420"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/votedown.png"
+            alt="Vote: I do not like it" title="Vote: I do not like it"
+        /></a>
+
+
+</li>
+            </ul>
+        </div>
+
+
+        <span style="position: relative; line-height: 1.65em; top: 0.75rem; left: 0.8em;">
+        </span>
+
+        <div class="right-meta">
+            <ul>
+                    <li>        <a href="/profile/300iq"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/user_16x16.png"
+            alt="Author" title="Author"
+        /></a>
+
+
+        <a href="/profile/300iq">
+        300iq
+        </a>
+</li>
+                    <li>        <img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/date_16x16.png"
+            alt="Publication date" title="Publication date"
+        />
+
+
+        
+        <span class="format-humantime" title="Mar/17/2020 22:00">2 weeks ago</span>
+        
+</li>
+                    <li>        <a href="/blog/entry/74889#comments"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/comments_16x16.png"
+            alt="Comments" title="Comments"
+        /></a>
+
+
+        <a href="/blog/entry/74889#comments">
+        264
+        </a>
+</li>
+            </ul>
+        </div>
+
+        <br style="clear:both;"/>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $(".topic-vote-up-75420").click(function () {
+        $.post("/data/topic/vote", {topicId: 75420, _tta: Codeforces.tta(), topicRevisionId: 181525, vote: +1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+    $(".topic-vote-down-75420").click(function () {
+        $.post("/data/topic/vote", {topicId: 75420, _tta: Codeforces.tta(), topicRevisionId: 181525, vote: -1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+        });
+    </script>
+</div>
+</div>
+<div style="margin-bottom:2em;">
+
+
+<div class="topic" topicId="75214">
+    <div class="title">
+            <a href="/blog/entry/74683">            <p>Codeforces Round #628 (Div.2)</p>
+</a>
+    </div>
+
+    <div class="info" style="position:relative;">
+            By&nbsp;<a href="/profile/mohammedehab2002" title="Master mohammedehab2002" class="rated-user user-orange">mohammedehab2002</a>,
+                <a href="/topic/75214/en5">history</a>,
+                <span class="format-humantime" title="Mar/12/2020 04:13">3 weeks ago</span>,
+            
+            <img style="position: relative;top: 5px;" src="//sta.codeforces.com/s/84672/images/flags/24/gb.png" alt="In English" title="In English"/>,
+
+<a class="attach-blogEntry-74683-to-contest-link" href="#"><img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" title="Attach this blog to some contest as a resource"/></a>
+
+<style type="text/css">
+    .attach-blogEntry-74683-to-contest-form tr:not(:last-of-type) td {
+        padding-bottom: 1em;
+    }
+
+    .blogEntry-74683-error {
+        font-size: 1.1rem;
+    }
+</style>
+
+<div class="attach-blogEntry-74683-to-contest-form-holder" style="display: none;padding: 1em;margin: 1em;">
+    <form class="attach-blogEntry-74683-to-contest-form" method="post"><input type='hidden' name='csrf_token' value='ce0ffdf854f99bb95c64318145b57bbf'/>
+        <table style="width: 100%;">
+            <thead>
+            </thead>
+            <tbody>
+        <tr class="subscription-row blogEntry-74683-blogId-error blogEntry-74683-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-74683-blogId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-74683-contestId">Contest:</label></td>
+                <td>
+                    <input type="text" style="width: 100%;float: left;" id="blogEntry-74683-contestId" name="contestIdAndName"/>
+                </td>
+                <td>
+                </td>
+            </tr>
+        <tr class="subscription-row blogEntry-74683-contestId-error blogEntry-74683-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-74683-contestId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-74683-resourceType">Type:</label></td>
+                <td>
+                    <select id="blogEntry-74683-resourceType" name="resourceType" style="width: 100%;">
+                        <option value="" selected></option>
+                        <option value="STATEMENT">statements</option>
+                        <option value="TUTORIAL">tutorial</option>
+                        <option value="ANNOUNCEMENT">announcement</option>
+                        <option value="DISCUSSION">discussion</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+        <tr class="subscription-row blogEntry-74683-resourceType-error blogEntry-74683-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-74683-resourceType">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" id="blogEntry-74683-resource-submit" value="Attach"
+                           style="padding: 0.25em 0.5em;margin: 1em;width: 8em;"/>
+                </td>
+                <td>
+                    <img id="blogEntry-74683-resource-submitting-indicator" src="//sta.codeforces.com/s/84672/images/indicator.gif"
+                         style="display: none;"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".blogEntry-74683-error").hide();
+
+        $(".attach-blogEntry-74683-to-contest-link").click(function () {
+            Codeforces.facebox(".attach-blogEntry-74683-to-contest-form-holder", "//sta.codeforces.com/s/84672");
+
+            var popupContestInput = $("#facebox input[name=contestIdAndName]");
+            popupContestInput.autocomplete("/data/contests?action=suggestContestWithEditableResources", {
+                delay: 200,
+                width: 500,
+                selectFirst: false,
+                matchContains: true,
+                scroll: true,
+                max: 150,
+                minChars: 2
+            });
+
+            $("#facebox .attach-blogEntry-74683-to-contest-form").submit(function () {
+                var contestId = popupContestInput.attr("value").trim().split(/[\- ]/)[0];
+                if (contestId !== undefined) {
+                    $("#facebox .blogEntry-74683-error").hide();
+                    $("#facebox #blogEntry-74683-resource-submitting-indicator").show();
+                    $("#facebox #blogEntry-74683-resource-submit").attr("disabled", "disabled");
+
+                    //noinspection JSUnusedGlobalSymbols
+                    $.post("/data/blogAndContest?action=attachBlogToContest", {
+                        blogId:"51463", contestId:contestId,
+                        blogEntryId:"74683",
+                        resourceType:$("#facebox #blogEntry-74683-resourceType").val()
+                    }, function (json) {
+                        var validated = true;
+
+                        for (var key in json) {
+                            if (json.hasOwnProperty(key) && key.indexOf("error__") === 0) {
+                                validated = false;
+                                $("#facebox .blogEntry-74683-" + key.substring("error__".length) + "-error").show();
+                                $("#facebox .for__blogEntry-74683-" + key.substring("error__".length)).text(json[key]);
+                            }
+                        }
+
+                        $("#facebox #blogEntry-74683-resource-submitting-indicator").hide();
+                        $("#facebox #blogEntry-74683-resource-submit").removeAttr("disabled");
+
+                        if (validated) {
+                            $.facebox.close();
+                            if (json["success"] === "true") {
+                                Codeforces.showMessage("Blog has been successfully attached to selected contest");
+                            } else {
+                                Codeforces.showMessage("There is unexpected error while attaching blog to the contest");
+                            }
+                        }
+                    }, "json");
+                }
+
+                return false;
+            });
+
+
+            return false;
+        });
+    });
+</script>
+
+
+
+        <span style="position:absolute;right:0;top:0.05em;margin-right:1em;display:inline;font-size:0.75em;">
+            <div style="margin-top:0.25em;">
+            </div>
+        </span>
+    </div>
+
+    <div class="content">
+        <div class="ttypography"><p>Hi!</p><p>Codeforces round #628 (vintage Codeforces round #2) will take place on <a class="contest-time" contestid="1325" href="https://www.timeanddate.com/worldclock/fixedtime.html?day=14&amp;month=3&amp;year=2020&amp;hour=17&amp;min=35&amp;sec=0&amp;p1=166"><span class="format-time-with-dow">Mar/14/2020 17:35 (Moscow time)</span></a>. It's rated for the second division, but, as usual, first division participants can take part out of competition.</p><p>The problems were created by me. I'd like to thank, and orz, <a class="rated-user user-red" href="/profile/antontrygubO_o" title="Grandmaster antontrygubO_o">antontrygubO_o</a> for coordinating the round; <a class="rated-user user-blue" href="/profile/ramchandra" title="Expert ramchandra">ramchandra</a>, <a class="rated-user user-orange" href="/profile/pajenegod" title="International master pajenegod">pajenegod</a>, <a class="rated-user user-orange" href="/profile/aryanc403" title="International master aryanc403">aryanc403</a>, <a class="rated-user user-orange" href="/profile/Taran_1407" title="Master Taran_1407">Taran_1407</a>, <a class="rated-user user-red" href="/profile/Kuroni" title="International Grandmaster Kuroni">Kuroni</a>, <a class="rated-user user-violet" href="/profile/mcdx9524" title="Candidate Master mcdx9524">mcdx9524</a>, <a class="rated-user user-orange" href="/profile/dorijanlendvaj" title="Master dorijanlendvaj">dorijanlendvaj</a>, <a class="rated-user user-orange" href="/profile/Andreasyan" title="Master Andreasyan">Andreasyan</a>, <a class="rated-user user-legendary" href="/profile/300iq" title="Legendary grandmaster 300iq"><span class="legendary-user-first-letter">3</span>00iq</a>, <a class="rated-user user-violet" href="/profile/zoooma13" title="Candidate Master zoooma13">zoooma13</a>, <a class="rated-user user-orange" href="/profile/Osama_Alkhodairy" title="Master Osama_Alkhodairy">Osama_Alkhodairy</a>, <a class="rated-user user-orange" href="/profile/Mohammad_Yasser" title="Master Mohammad_Yasser">Mohammad_Yasser</a>, and <a class="rated-user user-red" href="/profile/DeadPillow" title="Grandmaster DeadPillow">DeadPillow</a> (special shout-out) for testing the round; and of course <a class="rated-user user-admin" href="/profile/MikeMirzayanov" title="Headquarters, MikeMirzayanov">MikeMirzayanov</a> for the great codeforces and polygon platforms.</p><p>You'll be given 6 problems and 2 hours to solve them.</p><p><strong>UPD:</strong> the scoring distribution will be 500-750-1250-1750-2500-2750.</p><p><strong>UPD:</strong> the <a href="https://codeforces.com/blog/entry/74235">editorial</a> is out.</p><p><strong>UPD:</strong> congratulations to the winners!</p><p>Div.1:-</p> <ol>   <li><a class="rated-user user-red" href="/profile/tmwilliamlin168" title="International Grandmaster tmwilliamlin168">tmwilliamlin168</a></li>   <li><a class="rated-user user-legendary" href="/profile/MiFaFaOvO" title="Legendary grandmaster MiFaFaOvO"><span class="legendary-user-first-letter">M</span>iFaFaOvO</a></li>   <li><a class="rated-user user-legendary" href="/profile/Um_nik" title="Legendary grandmaster Um_nik"><span class="legendary-user-first-letter">U</span>m_nik</a></li>   <li><a class="rated-user user-red" href="/profile/imeimi" title="International Grandmaster imeimi">imeimi</a></li>   <li><a class="rated-user user-legendary" href="/profile/HIR180" title="Legendary grandmaster HIR180"><span class="legendary-user-first-letter">H</span>IR180</a></li> </ol><p>Div.2:-</p> <ol>   <li><a class="rated-user user-orange" href="/profile/davooddkareshki" title="International master davooddkareshki">davooddkareshki</a></li>   <li><a class="rated-user user-blue" href="/profile/rainboy" title="Expert rainboy">rainboy</a></li>   <li><a class="rated-user user-orange" href="/profile/PouyaNavid" title="Master PouyaNavid">PouyaNavid</a></li>   <li><a class="rated-user user-orange" href="/profile/_Lucien" title="Master _Lucien">_Lucien</a></li>   <li><a class="rated-user user-orange" href="/profile/socho" title="Master socho">socho</a></li> </ol><p>Good luck &amp; Have fun!</p></div><p><a href="/blog/entry/74683">Read more »</a></p>
+    </div>
+
+
+
+    <div class="roundbox meta" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+        <div class="left-meta">
+            <ul>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-up-75214"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/voteup.png"
+            alt="Vote: I like it" title="Vote: I like it"
+        /></a>
+
+
+</li>
+                    <li style="line-height: 1.6em;">
+
+        
+        <span title="Topic rating" style='font-size:larger;position:relative;bottom:1px;font-weight:bold;color:green'>+671</span>
+        
+</li>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-down-75214"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/votedown.png"
+            alt="Vote: I do not like it" title="Vote: I do not like it"
+        /></a>
+
+
+</li>
+            </ul>
+        </div>
+
+
+        <span style="position: relative; line-height: 1.65em; top: 0.75rem; left: 0.8em;">
+        </span>
+
+        <div class="right-meta">
+            <ul>
+                    <li>        <a href="/profile/mohammedehab2002"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/user_16x16.png"
+            alt="Author" title="Author"
+        /></a>
+
+
+        <a href="/profile/mohammedehab2002">
+        mohammedehab2002
+        </a>
+</li>
+                    <li>        <img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/date_16x16.png"
+            alt="Publication date" title="Publication date"
+        />
+
+
+        
+        <span class="format-humantime" title="Mar/12/2020 04:13">3 weeks ago</span>
+        
+</li>
+                    <li>        <a href="/blog/entry/74683#comments"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/comments_16x16.png"
+            alt="Comments" title="Comments"
+        /></a>
+
+
+        <a href="/blog/entry/74683#comments">
+        174
+        </a>
+</li>
+            </ul>
+        </div>
+
+        <br style="clear:both;"/>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $(".topic-vote-up-75214").click(function () {
+        $.post("/data/topic/vote", {topicId: 75214, _tta: Codeforces.tta(), topicRevisionId: 181045, vote: +1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+    $(".topic-vote-down-75214").click(function () {
+        $.post("/data/topic/vote", {topicId: 75214, _tta: Codeforces.tta(), topicRevisionId: 181045, vote: -1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+        });
+    </script>
+</div>
+</div>
+<div style="margin-bottom:2em;">
+
+
+<div class="topic" topicId="75192">
+    <div class="title">
+            <a href="/blog/entry/74661">            <p>Codeforces Round #627 (Div. 3)</p>
+</a>
+    </div>
+
+    <div class="info" style="position:relative;">
+            By&nbsp;<a href="/profile/vovuh" title="Master vovuh" class="rated-user user-orange">vovuh</a>,
+                <a href="/topic/75192/en5">history</a>,
+                <span class="format-humantime" title="Mar/11/2020 15:51">3 weeks ago</span>,
+            translation,
+            <img style="position: relative;top: 5px;" src="//sta.codeforces.com/s/84672/images/flags/24/gb.png" alt="In English" title="In English"/>,
+
+<a class="attach-blogEntry-74661-to-contest-link" href="#"><img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" title="Attach this blog to some contest as a resource"/></a>
+
+<style type="text/css">
+    .attach-blogEntry-74661-to-contest-form tr:not(:last-of-type) td {
+        padding-bottom: 1em;
+    }
+
+    .blogEntry-74661-error {
+        font-size: 1.1rem;
+    }
+</style>
+
+<div class="attach-blogEntry-74661-to-contest-form-holder" style="display: none;padding: 1em;margin: 1em;">
+    <form class="attach-blogEntry-74661-to-contest-form" method="post"><input type='hidden' name='csrf_token' value='ce0ffdf854f99bb95c64318145b57bbf'/>
+        <table style="width: 100%;">
+            <thead>
+            </thead>
+            <tbody>
+        <tr class="subscription-row blogEntry-74661-blogId-error blogEntry-74661-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-74661-blogId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-74661-contestId">Contest:</label></td>
+                <td>
+                    <input type="text" style="width: 100%;float: left;" id="blogEntry-74661-contestId" name="contestIdAndName"/>
+                </td>
+                <td>
+                </td>
+            </tr>
+        <tr class="subscription-row blogEntry-74661-contestId-error blogEntry-74661-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-74661-contestId">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td style="width: 30%;"><label for="blogEntry-74661-resourceType">Type:</label></td>
+                <td>
+                    <select id="blogEntry-74661-resourceType" name="resourceType" style="width: 100%;">
+                        <option value="" selected></option>
+                        <option value="STATEMENT">statements</option>
+                        <option value="TUTORIAL">tutorial</option>
+                        <option value="ANNOUNCEMENT">announcement</option>
+                        <option value="DISCUSSION">discussion</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+        <tr class="subscription-row blogEntry-74661-resourceType-error blogEntry-74661-error">
+            <td>&nbsp;</td>
+        <td colspan="2"><div class="shiftUp">        <span class="error for__blogEntry-74661-resourceType">-</span>
+</div></td>
+        </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" id="blogEntry-74661-resource-submit" value="Attach"
+                           style="padding: 0.25em 0.5em;margin: 1em;width: 8em;"/>
+                </td>
+                <td>
+                    <img id="blogEntry-74661-resource-submitting-indicator" src="//sta.codeforces.com/s/84672/images/indicator.gif"
+                         style="display: none;"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".blogEntry-74661-error").hide();
+
+        $(".attach-blogEntry-74661-to-contest-link").click(function () {
+            Codeforces.facebox(".attach-blogEntry-74661-to-contest-form-holder", "//sta.codeforces.com/s/84672");
+
+            var popupContestInput = $("#facebox input[name=contestIdAndName]");
+            popupContestInput.autocomplete("/data/contests?action=suggestContestWithEditableResources", {
+                delay: 200,
+                width: 500,
+                selectFirst: false,
+                matchContains: true,
+                scroll: true,
+                max: 150,
+                minChars: 2
+            });
+
+            $("#facebox .attach-blogEntry-74661-to-contest-form").submit(function () {
+                var contestId = popupContestInput.attr("value").trim().split(/[\- ]/)[0];
+                if (contestId !== undefined) {
+                    $("#facebox .blogEntry-74661-error").hide();
+                    $("#facebox #blogEntry-74661-resource-submitting-indicator").show();
+                    $("#facebox #blogEntry-74661-resource-submit").attr("disabled", "disabled");
+
+                    //noinspection JSUnusedGlobalSymbols
+                    $.post("/data/blogAndContest?action=attachBlogToContest", {
+                        blogId:"37007", contestId:contestId,
+                        blogEntryId:"74661",
+                        resourceType:$("#facebox #blogEntry-74661-resourceType").val()
+                    }, function (json) {
+                        var validated = true;
+
+                        for (var key in json) {
+                            if (json.hasOwnProperty(key) && key.indexOf("error__") === 0) {
+                                validated = false;
+                                $("#facebox .blogEntry-74661-" + key.substring("error__".length) + "-error").show();
+                                $("#facebox .for__blogEntry-74661-" + key.substring("error__".length)).text(json[key]);
+                            }
+                        }
+
+                        $("#facebox #blogEntry-74661-resource-submitting-indicator").hide();
+                        $("#facebox #blogEntry-74661-resource-submit").removeAttr("disabled");
+
+                        if (validated) {
+                            $.facebox.close();
+                            if (json["success"] === "true") {
+                                Codeforces.showMessage("Blog has been successfully attached to selected contest");
+                            } else {
+                                Codeforces.showMessage("There is unexpected error while attaching blog to the contest");
+                            }
+                        }
+                    }, "json");
+                }
+
+                return false;
+            });
+
+
+            return false;
+        });
+    });
+</script>
+
+
+
+        <span style="position:absolute;right:0;top:0.05em;margin-right:1em;display:inline;font-size:0.75em;">
+            <div style="margin-top:0.25em;">
+            </div>
+        </span>
+    </div>
+
+    <div class="content">
+        <div class="ttypography"><p><strong>UPD: Pay attention to the changed start time of the competition.</strong></p><p>&lt;almost-copy-pasted-part&gt;</p><p>Hello! <a href="/contest/1324" title="Codeforces Round 627 (Div. 3)">Codeforces Round #627 (Div. 3)</a> will start at <a class="contest-time" contestid="1324" href="https://www.timeanddate.com/worldclock/fixedtime.html?day=12&amp;month=3&amp;year=2020&amp;hour=16&amp;min=5&amp;sec=0&amp;p1=166"><span class="format-time-with-dow">Mar/12/2020 16:05 (Moscow time)</span></a>. You will be offered 6 or 7 problems (or 8) with expected difficulties to compose an interesting competition for participants with ratings up to 1600. However, all of you who wish to take part and have rating 1600 or higher, can register for the round unofficially.</p><p>The round will be hosted by rules of educational rounds (extended ACM-ICPC). Thus, during the round, solutions will be judged on preliminary tests, and after the round it will be a 12-hour phase of open hacks. I tried to make strong tests — just like you will be upset if many solutions fail after the contest is over.</p><p>You will be given 6 or 7 (or 8) problems and 2 hours to solve them.</p><p>Note that <strong>the penalty</strong> for the wrong submission in this round (and the following Div. 3 rounds) is <strong>10 minutes</strong>.</p><p><a href="/blog/entry/59228">Remember</a> that only the <i>trusted participants of the third division</i> will be included in the official standings table. As it is written by link, this is a compulsory measure for combating unsporting behavior. To qualify as a <i>trusted participants of the third division</i>, you must:</p> <ul>   <li>take part in at least two rated rounds (and solve at least one problem in each of them),</li>   <li>do not have a point of 1900 or higher in the rating.</li> </ul><p><b>Regardless of whether you are a <i>trusted participant of the third division</i> or not, if your rating is less than 1600, then the round will be rated for you.</b></p><p>Thanks to <a class="rated-user user-admin" href="/profile/MikeMirzayanov" title="Headquarters, MikeMirzayanov">MikeMirzayanov</a> for the platform, help with ideas for problems and for coordination of my work. Thanks to my good friends Daria <a class="rated-user user-blue" href="/profile/ZeroAmbition" title="Expert ZeroAmbition">ZeroAmbition</a> Stepanova, Mikhail <a class="rated-user user-orange" href="/profile/pikmike" title="Master pikmike">pikmike</a> Piklyaev, Maksim <a class="rated-user user-violet" href="/profile/Ne0n25" title="Candidate Master Ne0n25">Ne0n25</a> Mescheryakov and Ivan <a class="rated-user user-red" href="/profile/BledDest" title="International Grandmaster BledDest">BledDest</a> Androsov for help in round preparation and testing the round.</p><p>Good luck!</p><p>&lt;/almost-copy-pasted-part&gt;</p><p>Thanks to Artem <a class="rated-user user-violet" href="/profile/Rox" title="Candidate Master Rox">Rox</a> Plotkin and Dmitrii <a class="rated-user user-violet" href="/profile/_overrated_" title="Candidate Master _overrated_">_overrated_</a> Umnov for help with testing the round!</p><p><strong>UPD2</strong>: <a href="https://codeforces.com/blog/entry/74714">Editorial</a> is published!</p></div><p><a href="/blog/entry/74661">Read more »</a></p>
+    </div>
+
+    <div style="font-size: 1.1rem;line-height: 1.1rem;padding-bottom: 0.5em;">
+    <img src="//sta.codeforces.com/s/84672/images/icons/paperclip-16x16.png" style="vertical-align: middle;"/> <span style="padding: 0 0.35em;">Announcement of <a href="/contest/1324" class="notice" style="text-decoration: none;">Codeforces Round #627 (Div. 3)</a></span>
+    </div>
+
+        <div style="font-size: 1.1rem;line-height: 11px;">
+            <img style="vertical-align: middle;" src="//sta.codeforces.com/s/84672/images/blog/tags.png" title="Tags" alt="Tags"/>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=codeforces" class="tag notice" style="text-decoration: none;">codeforces</a>,
+                </span>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=627" class="tag notice" style="text-decoration: none;">627</a>,
+                </span>
+                <span style="padding: 0 0.35em;">
+    <a href="/search?query=third+division" class="tag notice" style="text-decoration: none;">third division</a>
+                </span>
+        </div>
+
+    <div class="roundbox meta" style="">
+            <div class="roundbox-lt">&nbsp;</div>
+            <div class="roundbox-rt">&nbsp;</div>
+            <div class="roundbox-lb">&nbsp;</div>
+            <div class="roundbox-rb">&nbsp;</div>
+        <div class="left-meta">
+            <ul>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-up-75192"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/voteup.png"
+            alt="Vote: I like it" title="Vote: I like it"
+        /></a>
+
+
+</li>
+                    <li style="line-height: 1.6em;">
+
+        
+        <span title="Topic rating" style='font-size:larger;position:relative;bottom:1px;font-weight:bold;color:green'>+203</span>
+        
+</li>
+                    <li style="line-height: 1.6em;">        <a href="#" class="topic-vote-down-75192"><img style="vertical-align:middle;position:relative;top:-0.2em" src="//sta.codeforces.com/s/84672/images/actions/votedown.png"
+            alt="Vote: I do not like it" title="Vote: I do not like it"
+        /></a>
+
+
+</li>
+            </ul>
+        </div>
+
+
+        <span style="position: relative; line-height: 1.65em; top: 0.75rem; left: 0.8em;">
+        </span>
+
+        <div class="right-meta">
+            <ul>
+                    <li>        <a href="/profile/vovuh"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/user_16x16.png"
+            alt="Author" title="Author"
+        /></a>
+
+
+        <a href="/profile/vovuh">
+        vovuh
+        </a>
+</li>
+                    <li>        <img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/date_16x16.png"
+            alt="Publication date" title="Publication date"
+        />
+
+
+        
+        <span class="format-humantime" title="Mar/11/2020 15:51">3 weeks ago</span>
+        
+</li>
+                    <li>        <a href="/blog/entry/74661#comments"><img style="vertical-align:middle;position:relative;top:-1px" src="//sta.codeforces.com/s/84672/images/blog/comments_16x16.png"
+            alt="Comments" title="Comments"
+        /></a>
+
+
+        <a href="/blog/entry/74661#comments">
+        389
+        </a>
+</li>
+            </ul>
+        </div>
+
+        <br style="clear:both;"/>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+    $(".topic-vote-up-75192").click(function () {
+        $.post("/data/topic/vote", {topicId: 75192, _tta: Codeforces.tta(), topicRevisionId: 180872, vote: +1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+    $(".topic-vote-down-75192").click(function () {
+        $.post("/data/topic/vote", {topicId: 75192, _tta: Codeforces.tta(), topicRevisionId: 180872, vote: -1}, function(data) {
+            Codeforces.showMessage(data);
+        }, "json");
+        return false;
+    });
+        });
+    </script>
+</div>
+</div>
+
+<div class="pagination">
+    <ul>
+            <span class="inactive">&larr;</span>
+        <li>
+                <span class="page-index active" pageIndex="1"><a href="/page/1">1</a></span>
+        </li>
+        <li>
+                <span class="page-index" pageIndex="2"><a href="/page/2">2</a></span>
+        </li>
+        <li>
+                <span class="page-index" pageIndex="3"><a href="/page/3">3</a></span>
+        </li>
+        <li>
+                ...
+        </li>
+        <li>
+                <span class="page-index" pageIndex="164"><a href="/page/164">164</a></span>
+        </li>
+        <li>
+                <span class="page-index" pageIndex="165"><a href="/page/165">165</a></span>
+        </li>
+            <li><a href="/page/2" class="arrow">&rarr;</a></li>
+    </ul>
+</div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+function handlePaginationKeyboardEvent(right) {
+    var pageIndex = parseInt($(".pagination").find("span.active").attr("pageIndex"));
+    if (right) {
+        pageIndex++;
+    } else {
+        pageIndex--;
+    }
+    $(".pagination").find("span[pageIndex=" + pageIndex + "]").each(function () {
+        Codeforces.redirect($(this).find("a").attr("href"));
+    });
+}
+
+$(document).bind('keydown', 'ctrl+left', function() {
+    handlePaginationKeyboardEvent(false);
+});
+
+$(document).bind('keydown', 'ctrl+right', function() {
+    handlePaginationKeyboardEvent(true);
+});
+        });
+    </script>                </div>
+        </div>
+            <br style="clear: both;"/>
+            <div id="footer">
+                <div><a href="https://codeforces.com/">Codeforces</a> (c) Copyright 2010-2020 Mike Mirzayanov</div>
+                <div>The only programming contests Web 2.0 platform</div>
+                    <div>Server time: <span class="format-timewithseconds" data-locale="en">Apr/01/2020 01:57:08</span> (h3).</div>
+                    <div>Desktop version, switch to <a rel="nofollow" class="switchToMobile" href="?mobile=true">mobile version</a>.</div>
+                <div class="smaller"><a href="/privacy">Privacy Policy</a></div>
+
+                    <div style="margin-top: 25px;">
+                        Supported by
+                    </div>
+                    <div style="margin-top: 8px; padding-bottom: 20px; position: relative; left: 10px;">
+                        <a href="https://telegram.org/"><img style="margin-right: 2em; width: 60px;" src="//sta.codeforces.com/s/84672/images/telegram-100x100.png" alt="Telegram" title="Telegram"/></a>
+                        <a href="http://ifmo.ru/en/"><img style="width: 120px;" src="//sta.codeforces.com/s/84672/images/itmo_small_en-logo.png" alt="ИТМО" title="ИТМО"/></a>
+                    </div>
+            </div>
+        <script type="text/javascript">
+            $(function() {
+                $(".switchToMobile").click(function() {
+                    Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", "true"));
+                    return false;
+                });
+                $(".switchToDesktop").click(function() {
+                    Codeforces.redirect(Codeforces.updateUrlParameter(document.location.href, "mobile", "false"));
+                    return false;
+                });
+            });
+        </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if ($(window).width() < 1600) {
+                $('.button-up').css('width', '30px').css('line-height', '30px').css('font-size', '20px');
+            }
+
+            if ($(window).width() >= 1200) {
+                $ (window).scroll (function () {
+                    if ($ (this).scrollTop () > 100) {
+                        $ ('.button-up').fadeIn();
+                    } else {
+                        $ ('.button-up').fadeOut();
+                    }
+                });
+
+                $('.button-up').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+
+                $('.button-up').hover(function () {
+                    $(this).animate({
+                        'opacity':'1'
+                    }).css({'background-color':'#e7ebf0','color':'#6a86a4'});
+                }, function () {
+                    $(this).animate({
+                        'opacity':'0.7'
+                    }).css({'background':'none','color':'#d3dbe4'});;
+                });
+            }
+            Codeforces.focusOnError();
+        });
+    </script>
+
+        <div class="userListsFacebox" style="display:none;">
+            <div style="padding: 0.5em; width: 600px; max-height: 200px; overflow-y: auto">
+<div class="datatable"
+     
+     style="background-color: #E1E1E1; padding-bottom: 3px;">
+            <div class="lt">&nbsp;</div>
+            <div class="rt">&nbsp;</div>
+            <div class="lb">&nbsp;</div>
+            <div class="rb">&nbsp;</div>
+
+            <div style="padding: 4px 0 0 6px;font-size:1.4rem;position:relative;">
+                User lists
+
+                <div style="position:absolute;right:0.25em;top:0.35em;">
+                    <span style="padding:0;position:relative;bottom:2px;" class="rowCount"></span>
+
+                    <img class="closed" src="//sta.codeforces.com/s/84672/images/icons/control.png"/>
+
+                    <span class="filter" style="display:none;">
+                        <img class="opened" src="//sta.codeforces.com/s/84672/images/icons/control-270.png"/>
+                        <input style="padding:0 0 0 20px;position:relative;bottom:2px;border:1px solid #aaa;height:17px;font-size:1.3rem;"/>
+                    </span>
+                </div>
+            </div>
+            <div style="background-color: white;margin:0.3em 3px 0 3px;position:relative;">
+            <div class="ilt">&nbsp;</div>
+            <div class="irt">&nbsp;</div>
+            <table class="">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+            </table>
+            </div>
+        </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+                // Create new ':containsIgnoreCase' selector for search
+                jQuery.expr[':'].containsIgnoreCase = function(a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+                if (window.updateDatatableFilter == undefined) {
+                    window.updateDatatableFilter = function(i) {
+                        var parent = $(i).parent().parent().parent().parent();
+                        $("tr.no-items", parent).remove();
+                        $("tr", parent).hide().removeClass('visible');
+                        var text = $(i).val();
+                        if (text) {
+                            $("tr" + ":containsIgnoreCase('" + text + "')", parent).show().addClass('visible');
+                        } else {
+                            parent.find(".rowCount").text("");
+                            $("tr", parent).show().addClass('visible');
+                        }
+
+                        var found = false;
+                        var visibleRowCount = 0;
+                        $("tr", parent).each(function () {
+                            if (!found) {
+                                if ($(this).find("th").size() > 0) {
+                                    $(this).show().addClass('visible');
+                                    found = true;
+                                }
+                            }
+                            if ($(this).hasClass('visible')) {
+                                visibleRowCount++;
+                            }
+                        });
+                        if (text) {
+                            parent.find(".rowCount").text("Matches: " + (visibleRowCount - (found ? 1 : 0)));
+                        }
+                        if (visibleRowCount == (found ? 1 : 0)) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo($(parent).find('table'));
+                        }
+                        $(parent).find("tr td").removeClass("dark");
+                        $(parent).find("tr.visible:odd td").addClass("dark");
+                    }
+
+                    $(".datatable .closed").click(function () {
+                        var parent = $(this).parent();
+                        $(this).hide();
+                        $(".filter", parent).fadeIn(function () {
+                            $("input", parent).val("").focus().css("border", "1px solid #aaa");
+                        });
+                    });
+
+                    $(".datatable .opened").click(function () {
+                        var parent = $(this).parent().parent();
+                        $(".filter", parent).fadeOut(function () {
+                            $(".closed", parent).show();
+                            $("input", parent).val("").each(function () {
+                                window.updateDatatableFilter(this);
+                            });
+                        });
+                    });
+
+                    $(".datatable .filter input").keyup(function(e) {
+                        window.updateDatatableFilter(this);
+                        e.preventDefault();
+                        e.stopPropagation();
+                    });
+
+                    $(".datatable table").each(function () {
+                        var found = false;
+                        $("tr", this).each(function () {
+                            if (!found && $(this).find("th").size() == 0) {
+                                found = true;
+                            }
+                        });
+                        if (!found) {
+                            $("<tr class='no-items visible'><td style=\"text-align:left;\"colspan=\"32\">No items<\/td><\/tr>").appendTo(this);
+                        }
+                    });
+
+                    // Applies styles to datatables.
+                    $(".datatable").each(function () {
+                        $(this).find("tr:first th").addClass("top");
+                        $(this).find("tr:last td").addClass("bottom");
+                        $(this).find("tr:odd td").addClass("dark");
+                        $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                        $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                    });
+
+                    $(".datatable table.tablesorter").each(function () {
+                        $(this).bind("sortEnd", function () {
+                            $(".datatable").each(function () {
+                                $(this).find("th, td")
+                                    .removeClass("top").removeClass("bottom")
+                                    .removeClass("left").removeClass("right")
+                                    .removeClass("dark");
+                                $(this).find("tr:first th").addClass("top");
+                                $(this).find("tr:last td").addClass("bottom");
+                                $(this).find("tr:odd td").addClass("dark");
+                                $(this).find("tr td:first-child, tr th:first-child").addClass("left");
+                                $(this).find("tr td:last-child, tr th:last-child").addClass("right");
+                            });
+                        });
+                    });
+                }
+        });
+    </script>
+            </div>
+        </div>
+        <script type="application/javascript">
+            $(function() {
+                $(".userListMarker").click(function() {
+                    $.post("/data/lists", {action: "findTouched"}, function(json) {
+                        Codeforces.facebox(".userListsFacebox");
+                        var tbody = $("#facebox tbody");
+                        tbody.empty();
+                        for (var i in json) {
+                            tbody.append(
+                                    $("<tr></tr>").append(
+                                            $("<td></td>").attr("data-readKey", json[i].readKey).text(json[i].name)
+                                    )
+                            );
+                        }
+                        Codeforces.updateDatatables();
+                        tbody.find("td").css("cursor", "pointer").click(function() {
+                            document.location = Codeforces.updateUrlParameter(document.location.href, "list", $(this).attr("data-readKey"));
+                        });
+                    }, "json");
+                });
+            });
+        </script>
+</div>
+    <script type="application/javascript">
+        if ('serviceWorker' in navigator && 'fetch' in window && 'caches' in window) {
+            var parser = new UAParser();
+            var browserName = parser.getBrowser().name;
+            var browserVersion = parser.getBrowser().version;
+
+            var supportedBrowser = false;
+            var supportedBrowsers = {
+                "Chrome": "76",
+                "Firefox": "68",
+                // "Edge": "18",
+                "Safari": "12.1",
+                "Opera": "63",
+                "Yandex": "19.9"
+            };
+
+            for (var name in supportedBrowsers) {
+                if (name === browserName && supportedBrowsers[name] <= browserVersion) {
+                    supportedBrowser = true;
+                }
+            }
+
+            if (supportedBrowser) {
+                navigator.serviceWorker.register('/service-worker-84672.js')
+                    .then(function (registration) {
+                        console.log('Service worker registered');
+                    })
+                    .catch(function (error) {
+                        console.log('Registration failed: ', error);
+                    });
+            } else {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    for (var i = 0; i < registrations.length; i++) {
+                        registrations[i].unregister();
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

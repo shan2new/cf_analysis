@@ -1,0 +1,22 @@
+{
+  "name": "cf-analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shan2new",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^1.10.0",
+    "chai-as-promised": "^4.1.1",
+    "cheerio": "^1.0.0-rc.3",
+    "mocha": "^2.0.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "requests": "^0.3.0",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "sleep": "^6.1.0"
+  }
+}
